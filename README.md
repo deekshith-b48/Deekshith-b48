@@ -8,7 +8,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48" alt="deekshith-b48" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/deekshith_b48" target="blank"><img src="https://img.shields.io/twitter/follow/deekshith_b48?logo=twitter&style=for-the-badge" alt="deekshith_b48" /></a> </p>
+<p align="left"> <a href="https://twitter.com/deekshith_b48" target="blank"><img src="https://img.shields.io/twitter/follow/deekshith484?logo=twitter&style=for-the-badge" alt="deekshith_b48" /></a> </p>
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->

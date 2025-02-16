@@ -34,8 +34,6 @@
 ## 📊 GitHub Stats:
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-  
+   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=deekshith-b48&layout=compact&theme=tokyonight" alt="Top Languages" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=deekshith-b48&theme=tokyonight" alt="GitHub Streak" />
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=deekshith-b48&layout=compact&theme=tokyonight" alt="Top Languages" />
 </p>

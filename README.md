@@ -1,6 +1,7 @@
+
 <!-- Banner Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=300&section=header&text=Deekshith%20B%20Gowda&fontSize=70&fontAlignY=35&desc=Web3%20Developer%20|%20Full‑Stack%20Engineer%20|%20Open%20Source%20Contributor&descAlignY=60&descSize=18&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=300&section=header&text=Deekshith%20B%20Gowda&fontSize=70&fontAlignY=35&desc=Web3%20Developer%20|%20Full-Stack%20Engineer%20|%20AI%20Tools%20Specialist&descSize=30&descAlignY=55" />
 </div>
 
 <div align="center">
@@ -15,7 +16,7 @@
       <img src="https://img.shields.io/github/followers/deekshith-b48?color=10b981&logo=github&style=for-the-badge" alt="followers"/>
     </a>
   </p>
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=A177FE&center=true&vCenter=true&width=600&height=70&lines=Web3+Developer;Full+Stack+Engineer;Web+Designer;AI+Tools+Specialist;Always+Learning" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=A177FE&center=true&vCenter=true&width=600&height=70&lines=Web3+Developer;Full-Stack+Engineer;AI+Tools+Specialist;Always+Innovating+%F0%9F%94%A5" alt="Typing SVG" />
 </div>
 
 ---
@@ -96,6 +97,7 @@ const deekshith = {
 </p>
 
 ---
+
 ## 🌟 Featured Projects
 
 <table>
@@ -141,56 +143,82 @@ const deekshith = {
 
 ---
 
-## 📊 GitHub Stats
+<!-- GitHub Stats Section -->
+<h2 align="center">
+  <img src="https://media.giphy.com/media/VdoIFLsMIlwzfKD520/giphy.gif" width="25px">
+  <span style="color:#A177FE;">GITHUB ANALYTICS</span>
+</h2>
 
 <p align="center">
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=deekshith-b48&theme=radical&hide_border=true&background=0D1117&stroke=A177FE&ring=A177FE&fire=A177FE"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&icon_color=A177FE"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deekshith-b48&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE"/>
+  <a href="https://github.com/deekshith-b48">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=deekshith-b48&theme=radical&hide_border=true&background=0D1117&stroke=A177FE&ring=A177FE&fire=A177FE" alt="Deekshith's GitHub Streak"/>
+  </a>
 </p>
 
----
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&icon_color=A177FE" />
+      </td>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deekshith-b48&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&layout=compact" />
+      </td>
+    </tr>
+  </table>
+</div>
 
-## 🐍 My GitHub Snake Game
-
+<!-- GitHub Activity Graph -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="400">
+  <a href="https://github.com/deekshith-b48">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=0D1117&color=A177FE&line=A177FE&point=FFFFFF&area=true&area_color=A177FE&hide_border=true" alt="Deekshith's Contribution Graph" />
+  </a>
 </p>
 
-<h3 align="center">My GitHub Snake: Always Hungry 🥹</h3>
-<p align="center">When I Code, the Snake Grows! ☠️<br/>
-The snake only eats code. Keep it fed! 🫡</p>
-
+<!-- GitHub Trophies -->
 <p align="center">
-  <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deekshith-b48/Deekshith-b48/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/Deekshith-b48/output/github-contribution-grid-snake.svg">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/deekshith-b48/Deekshith-b48/output/github-contribution-grid-snake.svg">
-</picture>
+  <img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48&theme=radical&margin-w=15&margin-h=15&no-bg=true&no-frame=true&column=7" alt="GitHub Trophies" />
 </p>
 
 ---
 
 ## 💻 Coding Profiles
 
-<p align="center">
-  <a href="https://leetcode.com/deekshith_b48"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
-  <a href="https://www.codechef.com/users/deekshith_b48"><img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/></a>
-  <a href="https://www.hackerrank.com/deekshith_b48"><img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white"/></a>
-</p>
+<div align="center" style="margin-top: 20px;">
+  <a href="https://leetcode.com/deekshith_b48/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+  </a>
+  <a href="https://www.codechef.com/users/deekshith_b48" target="_blank">
+    <img src="https://img.shields.io/badge/CodeChef-%23964B00.svg?style=for-the-badge&logo=CodeChef&logoColor=white" alt="CodeChef"/>
+  </a>
+  <a href="https://www.hackerrank.com/deekshith_b48" target="_blank">
+    <img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank"/>
+  </a>
+</div>
 
 ---
 
-## 📫 Let’s Connect!
-
-<p align="center">
-  <a href="https://linkedin.com/in/deekshithb4828"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:deekshithb48@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/deekshith-b48"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-</p>
-
----
+<!-- Animated Footer -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=170&section=footer&text=Let's%20Connect%20and%20Innovate!&fontSize=40&fontColor=fff&animation=fadeIn&fontAlignY=70" />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=150&section=footer&text=Thanks%20for%20Visiting!%20Let's%20Build%20Together🚀&fontSize=25&animation=fadeIn"/>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=A177FE&center=true&vCenter=true&random=false&width=600&height=60&lines=Thanks+for+visiting+my+profile!;Let's+collaborate+on+something+amazing!;Always+open+to+new+opportunities+and+connections!" alt="Typing SVG" />
+  </a>
+  
+  <div style="margin-top: 20px;">
+    <a href="https://linkedin.com/in/deekshithb4828" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+    <a href="mailto:deekshithb48@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    </a>
+    <a href="https://github.com/deekshith-b48" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    </a>
+  </div>
+  
+  <p style="margin-top: 20px;">
+    <strong>© 2025 Deekshith B Gowda | All Rights Reserved</strong>
+  </p>
 </div>

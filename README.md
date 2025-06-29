@@ -3,7 +3,9 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=300&section=header&text=Deekshith%20B%20Gowda&fontSize=70&fontAlignY=35&desc=Web3%20Developer%20|%20Full‑Stack%20Engineer%20|%20Open%20Source%20Contributor&descAlignY=60&descSize=18&animation=fadeIn" width="100%"/>
 </div>
 
-![MasterHead](https://www.charpeni.com/static/images/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think/banner.gif)
+<div align="center">
+  <img src="https://media1.tenor.com/m/OXyGMl4fGboAAAAd/animate-background-technology.gif" alt="MasterHead" width="100%" style="max-width:900px; border-radius: 8px; margin-top: 16px;"/>
+</div>
 
 <!-- Profile badges and typing effect -->
 <div align="center">
@@ -81,7 +83,6 @@ const deekshith = {
   <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express"/>
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
 </p>
 
 ### AI Tools & Platforms

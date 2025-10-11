@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img src="https://media1.tenor.com/m/OXyGMl4fGboAAAAd/animate-background-technology.gif" alt="MasterHead" width="100%" style="max-width:900px; border-radius: 8px; margin-top: 16px;"/>
+  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" alt="Developer Animation" width="100%" style="max-width:900px; border-radius: 8px; margin-top: 16px;"/>
 </div>
 
 <!-- Profile badges and typing effect -->
@@ -19,6 +19,53 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=A177FE&center=true&vCenter=true&width=600&height=70&lines=Web3+Developer;Full-Stack+Engineer;AI+Tools+Specialist;Always+Innovating+%F0%9F%94%A5" alt="Typing SVG" />
 </div>
 
+<!-- GitHub Stats Section -->
+<h2 align="center">
+  <img src="https://media.giphy.com/media/VdoIFLsMIlwzfKD520/giphy.gif" width="25px">
+  <span style="color:#A177FE;">GITHUB ANALYTICS</span>
+</h2>
+
+<p align="center">
+  <a href="https://github.com/deekshith-b48">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=deekshith-b48&theme=radical&hide_border=true&background=0D1117&stroke=A177FE&ring=A177FE&fire=A177FE" alt="Deekshith's GitHub Streak"/>
+  </a>
+</p>
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&icon_color=A177FE" />
+      </td>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deekshith-b48&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&layout=compact" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- GitHub Activity Graph -->
+<p align="center">
+  <a href="https://github.com/deekshith-b48">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=0D1117&color=A177FE&line=A177FE&point=FFFFFF&area=true&area_color=A177FE&hide_border=true" alt="Deekshith's Contribution Graph" />
+  </a>
+</p>
+
+<!-- Snake Game Animation -->
+<div align="center">
+  <h3>🐍 Contribution Snake Game</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
+  </picture>
+</div>
+
+<!-- GitHub Trophies -->
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48&theme=radical&margin-w=15&margin-h=15&no-bg=true&no-frame=true&column=7" alt="GitHub Trophies" />
+</p>
+
 ---
 
 ## 👨‍💻 About Me
@@ -29,12 +76,6 @@ const deekshith = {
   location: "Bengaluru, Karnataka, India",
   education: "B.E. in CSE – Cambridge Institute of Technology (2022–2026)",
   focus: ["AI/ML Systems", "Cybersecurity", "Legal-Tech Solutions", "Financial Applications", "Protocol Analysis"],
-  githubStats: {
-    repositories: 27,
-    followers: 16,
-    codeLines: "2M+ lines across multiple languages",
-    activeLanguages: ["JavaScript", "TypeScript", "Python", "Java", "Solidity"]
-  },
   skills: {
     frontend: ["React", "Next.js", "Tailwind CSS", "JavaScript", "TypeScript", "HTML", "CSS", "Vite"],
     backend: ["Node.js", "Express.js", "FastAPI", "GraphQL", "MongoDB", "PostgreSQL", "Supabase"],
@@ -216,56 +257,6 @@ const deekshith = {
   </a>
 </p>
 
----
-
-<!-- GitHub Stats Section -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/VdoIFLsMIlwzfKD520/giphy.gif" width="25px">
-  <span style="color:#A177FE;">GITHUB ANALYTICS</span>
-</h2>
-
-<p align="center">
-  <a href="https://github.com/deekshith-b48">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=deekshith-b48&theme=radical&hide_border=true&background=0D1117&stroke=A177FE&ring=A177FE&fire=A177FE" alt="Deekshith's GitHub Streak"/>
-  </a>
-</p>
-
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&icon_color=A177FE" />
-      </td>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deekshith-b48&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&layout=compact" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<!-- GitHub Activity Graph -->
-<p align="center">
-  <a href="https://github.com/deekshith-b48">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=0D1117&color=A177FE&line=A177FE&point=FFFFFF&area=true&area_color=A177FE&hide_border=true" alt="Deekshith's Contribution Graph" />
-  </a>
-</p>
-
-<!-- Snake Game Animation -->
-<div align="center">
-  <h3>🐍 Contribution Snake Game</h3>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
-  </picture>
-</div>
-
-<!-- GitHub Trophies -->
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48&theme=radical&margin-w=15&margin-h=15&no-bg=true&no-frame=true&column=7" alt="GitHub Trophies" />
-</p>
-
----
 
 ## 💻 Coding Profiles
 
@@ -280,9 +271,6 @@ const deekshith = {
     <img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank"/>
   </a>
 </div>
-
----
-
 
 
 <div align="center">

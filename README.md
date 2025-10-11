@@ -258,6 +258,11 @@ const deekshith = {
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake.svg">
   </picture>
+  
+  <!-- Alternative Snake Animation (fallback) -->
+  <div style="margin-top: 10px;">
+    <img src="https://github.com/deekshith-b48/deekshith-b48/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  </div>
 </div>
 
 <!-- GitHub Trophies -->

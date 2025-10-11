@@ -250,6 +250,16 @@ const deekshith = {
   </a>
 </p>
 
+<!-- Snake Game Animation -->
+<div align="center">
+  <h3>🐍 Contribution Snake Game</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
+
 <!-- GitHub Trophies -->
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48&theme=radical&margin-w=15&margin-h=15&no-bg=true&no-frame=true&column=7" alt="GitHub Trophies" />

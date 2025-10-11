@@ -13,11 +13,23 @@ on:
   push:
     branches: [ main ]
 
+# Permissions needed for the workflow
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -35,11 +47,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      # Push the content of <build_dir> to a branch
-      - name: Push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+      # Commit and push the snake files directly
+      - name: Commit and push snake files
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout --orphan output
+          git rm -rf .
+          mv dist/* .
+          git add *.svg
+          git commit -m "Update snake animations - $(date)"
+          git push origin output --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

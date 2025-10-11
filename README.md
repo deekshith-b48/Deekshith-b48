@@ -253,15 +253,21 @@ const deekshith = {
 <!-- Snake Game Animation -->
 <div align="center">
   <h3>🐍 Contribution Snake Game</h3>
+  <!-- Generated Snake Animation -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake.svg">
   </picture>
   
-  <!-- Alternative Snake Animation (fallback) -->
+  <!-- Live Snake Animation (Alternative) -->
+  <div style="margin-top: 15px;">
+    <img src="https://github.com/deekshith-b48/deekshith-b48/blob/output/github-contribution-grid-snake.svg" alt="Snake Game Animation" />
+  </div>
+  
+  <!-- Backup Snake Animation Service -->
   <div style="margin-top: 10px;">
-    <img src="https://github.com/deekshith-b48/deekshith-b48/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+    <img src="https://platane.github.io/snk/github-contribution-grid-snake-dark.svg?username=deekshith-b48" alt="Snake Animation" width="100%"/>
   </div>
 </div>
 

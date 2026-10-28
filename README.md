@@ -3,9 +3,7 @@
 </div>
 
 <p align="center">
-  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=deekshith-b48&style=for-the-badge&color=1f8a4c&labelColor=050806"/>
-  <a href="https://github.com/deekshith-b48?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/deekshith-b48?style=for-the-badge&logo=github&logoColor=2fae63&color=14532d&labelColor=050806"/></a>
-  <a href="https://its-deekshith.space"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-its--deekshith.space-050806?style=for-the-badge&labelColor=14532d"/></a>
+  <a href="https://its-deekshith.space"><img alt="Portfolio — its-deekshith.space" src="assets/badge-portfolio.svg"/></a>
 </p>
 
 <img src="assets/divider.svg" alt="" width="100%"/>
@@ -22,13 +20,13 @@
     <td width="50%"><img src="assets/generated/pulse.svg" alt="Push activity over the last 30 days (live)" width="100%"/></td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub streak" width="100%" src="https://streak-stats.demolab.com/?user=deekshith-b48&background=050806&border=14532d&ring=1f8a4c&fire=2fae63&currStreakLabel=f4f7f4&currStreakNum=f4f7f4&sideLabels=8c968f&sideNums=f4f7f4&dates=8c968f&stroke=14532d"/></a></td>
-    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub stats" width="100%" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&count_private=true&hide_border=false&bg_color=050806&border_color=14532d&title_color=2fae63&icon_color=1f8a4c&text_color=f4f7f4"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub streak" width="100%" src="https://streak-stats.demolab.com/?user=deekshith-b48&background=050806&border=4a514c&ring=f4f7f4&fire=c9d1cb&currStreakLabel=2fae63&currStreakNum=2fae63&sideLabels=8c968f&sideNums=2fae63&dates=8c968f&stroke=4a514c"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub stats" width="100%" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&count_private=true&hide_border=false&bg_color=050806&border_color=4a514c&title_color=f4f7f4&icon_color=c9d1cb&text_color=2fae63"/></a></td>
   </tr>
 </table>
 
 <p align="center">
-  <a href="https://github.com/deekshith-b48"><img width="100%" alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=050806&color=2fae63&line=1f8a4c&point=f4f7f4&area=true&area_color=14532d&hide_border=true"/></a>
+  <a href="https://github.com/deekshith-b48"><img width="100%" alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=050806&color=f4f7f4&line=c9d1cb&point=2fae63&area=true&area_color=4a514c&hide_border=true"/></a>
 </p>
 
 <img src="assets/h-projects.svg" alt="03 — Projects" width="100%"/>
@@ -61,12 +59,12 @@
 <img src="assets/h-connect.svg" alt="06 — Elsewhere" width="100%"/>
 
 <p align="center">
-  <a href="https://its-deekshith.space"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-050806?style=for-the-badge&logo=googlechrome&logoColor=2fae63&labelColor=050806&color=14532d"/></a>
-  <a href="https://github.com/deekshith-b48"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-050806?style=for-the-badge&logo=github&logoColor=2fae63&labelColor=050806&color=14532d"/></a>
-  <a href="https://linkedin.com/in/deekshithb48"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-050806?style=for-the-badge&logo=linkedin&logoColor=2fae63&labelColor=050806&color=14532d"/></a>
-  <a href="https://x.com/deekshith_b48"><img alt="X" src="https://img.shields.io/badge/X-050806?style=for-the-badge&logo=x&logoColor=2fae63&labelColor=050806&color=14532d"/></a>
-  <a href="https://leetcode.com/deekshith_b48/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-050806?style=for-the-badge&logo=leetcode&logoColor=2fae63&labelColor=050806&color=14532d"/></a>
-  <a href="mailto:bdeekshith41@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-050806?style=for-the-badge&logo=gmail&logoColor=2fae63&labelColor=050806&color=14532d"/></a>
+  <a href="https://its-deekshith.space"><img alt="Portfolio" src="assets/badge-portfolio.svg"/></a>
+  <a href="https://github.com/deekshith-b48"><img alt="GitHub" src="assets/badge-github.svg"/></a>
+  <a href="https://linkedin.com/in/deekshithb48"><img alt="LinkedIn" src="assets/badge-linkedin.svg"/></a>
+  <a href="https://x.com/deekshith_b48"><img alt="X" src="assets/badge-x.svg"/></a>
+  <a href="https://leetcode.com/deekshith_b48/"><img alt="LeetCode" src="assets/badge-leetcode.svg"/></a>
+  <a href="mailto:bdeekshith41@gmail.com"><img alt="Email" src="assets/badge-email.svg"/></a>
 </p>
 
 <div align="center">

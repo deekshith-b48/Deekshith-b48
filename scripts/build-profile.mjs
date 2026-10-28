@@ -15,10 +15,14 @@ const A = (f) => path.join(ROOT, "assets", f);
 const G = (f) => path.join(ROOT, "assets", "generated", f);
 fs.mkdirSync(path.join(ROOT, "assets", "generated"), { recursive: true });
 
-/* ───────────── palette: black, white, dark green only ───────────── */
-const BG = "#050806", PANEL = "#08100b", FG = "#f4f7f4", MUT = "#8c968f", DIM = "#4d5852";
-const G0 = "#0c3b22", G1 = "#14532d", G2 = "#1f8a4c", G3 = "#2fae63";
-const SHADES = [G3, G2, "#17703d", G1, G0]; // language bars: lightness stands in for colour
+/* ───────────── palette: black, white, dark green only (roles: green = text, white = accents) ───────────── */
+const BG = "#050806", PANEL = "#08100b", MUT = "#8c968f", DIM = "#5a615c";
+const FG = "#2fae63";                 // text and primary marks: green
+const G3 = "#f4f7f4";                 // accent highlight: white
+const G2 = "#c9d1cb";                 // accent: light white
+const G1 = "#4a514c";                 // borders / rules: white at low strength
+const G0 = "#1c211e";                 // faint fills
+const SHADES = [G3, G2, "#a3aaa5", G1, G0]; // language bars: whites stepping down
 const MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
 const SANS = "ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -128,7 +132,7 @@ ${term}
 <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.5" fill="#000" opacity="0.5"/></pattern>
 <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
 <filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0"/>
-<feComponentTransfer><feFuncR type="table" tableValues="0.02 0.12 0.96"/><feFuncG type="table" tableValues="0.03 0.54 0.97"/><feFuncB type="table" tableValues="0.02 0.30 0.96"/></feComponentTransfer></filter>`, body));
+<feComponentTransfer><feFuncR type="table" tableValues="0.02 0.88 0.18"/><feFuncG type="table" tableValues="0.03 0.90 0.68"/><feFuncB type="table" tableValues="0.02 0.88 0.38"/></feComponentTransfer></filter>`, body));
 }
 
 function buildStack() {
@@ -199,10 +203,21 @@ ${right ? `<text x="${W - 20}" y="25" text-anchor="end" font-family="${MONO}" fo
   hdr("h-notes", "05", "Engineering notes", "how I build");
   hdr("h-connect", "06", "Elsewhere", "");
   write(A("divider.svg"), svgDoc(W, 22, "divider", `<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="${G2}" stop-opacity="0"/><stop offset="0.5" stop-color="${G2}"/><stop offset="1" stop-color="${G2}" stop-opacity="0"/></linearGradient>
-<linearGradient id="s" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>`,
+<linearGradient id="s" x1="0" x2="1"><stop offset="0" stop-color="#2fae63" stop-opacity="0"/><stop offset="0.5" stop-color="#2fae63" stop-opacity="0.95"/><stop offset="1" stop-color="#2fae63" stop-opacity="0"/></linearGradient>`,
     `<rect width="${W}" height="22" fill="${BG}"/><rect x="20" y="10" width="${W - 40}" height="2" fill="url(#g)"/>
 <rect x="-120" y="10" width="120" height="2" fill="url(#s)"><animate attributeName="x" from="-120" to="${W}" dur="3.6s" repeatCount="indefinite"/></rect>
 <path d="M450 3l8 8-8 8-8-8z" fill="${BG}" stroke="${G3}" stroke-width="1.5"/>`));
+}
+
+function buildBadges() {
+  const items = [["PORTFOLIO", "its-deekshith.space"], ["GITHUB", "deekshith-b48"], ["LINKEDIN", "deekshithb48"], ["X", "@deekshith_b48"], ["LEETCODE", "deekshith_b48"], ["EMAIL", "bdeekshith41@gmail.com"]];
+  for (const [k, v] of items) {
+    const lw = k.length * 8.2 + 26, vw = v.length * 7.2 + 24, w = Math.round(lw + vw);
+    write(A(`badge-${k.toLowerCase()}.svg`), svgDoc(w, 34, `${k}: ${v}`, "", `<rect x="0.5" y="0.5" width="${w - 1}" height="33" rx="4" fill="${PANEL}" stroke="${G3}" stroke-opacity="0.7"/>
+<rect x="1" y="1" width="${lw.toFixed(0)}" height="32" rx="3" fill="${G3}" fill-opacity="0.1"/>
+<text x="13" y="21.5" font-family="${MONO}" font-size="10.5" font-weight="700" letter-spacing="2" fill="${G3}">${esc(k)}</text>
+<text x="${(lw + 12).toFixed(0)}" y="21.5" font-family="${MONO}" font-size="12" fill="${FG}">${esc(v)}</text>`));
+  }
 }
 
 /* ═════════════════ live data ═════════════════ */
@@ -383,7 +398,7 @@ function replaceBlock(md, name, inner) {
 }
 
 async function main() {
-  buildHero(); buildStack(); buildNotes(); buildChrome();
+  buildHero(); buildStack(); buildNotes(); buildChrome(); buildBadges();
   let data;
   try { data = await fetchData(); } catch (e) { console.warn("GitHub API unavailable, keeping existing generated files:", e.message); return; }
   const byName = data.bySlim || new Map(data.repos.map((r) => [r.name, r]));

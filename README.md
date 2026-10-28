@@ -8,11 +8,10 @@
 
 <img src="assets/divider.svg" alt="" width="100%"/>
 
-<img src="assets/h-stack.svg" alt="01 — Stack" width="100%"/>
-<img src="assets/stack.svg" alt="Tech stack" width="100%"/>
-
-<img src="assets/h-analytics.svg" alt="02 — Analytics" width="100%"/>
+<img src="assets/h-analytics.svg" alt="01 — Analytics" width="100%"/>
 <img src="assets/generated/stats.svg" alt="GitHub counters (live)" width="100%"/>
+
+<img src="assets/generated/contrib.svg" alt="Contribution graph, last 12 months (live)" width="100%"/>
 
 <table width="100%">
   <tr>
@@ -25,9 +24,8 @@
   </tr>
 </table>
 
-<p align="center">
-  <a href="https://github.com/deekshith-b48"><img width="100%" alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=050505&color=f5f5f5&line=d0d0d0&point=2fae63&area=true&area_color=3a3a3a&hide_border=true"/></a>
-</p>
+<img src="assets/h-stack.svg" alt="02 — Stack" width="100%"/>
+<img src="assets/stack.svg" alt="Tech stack" width="100%"/>
 
 <img src="assets/h-projects.svg" alt="03 — Projects" width="100%"/>
 

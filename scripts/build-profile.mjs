@@ -196,8 +196,8 @@ function buildChrome() {
 <text x="60" y="25" font-family="${MONO}" font-size="12" font-weight="700" letter-spacing="3" fill="${FG}">${esc(text.toUpperCase())}</text>
 ${right ? `<text x="${W - 20}" y="25" text-anchor="end" font-family="${MONO}" font-size="11" fill="${MUT}">${esc(right)}</text>` : ""}
 <rect x="-160" y="37" width="160" height="2" fill="url(#sw)"><animate attributeName="x" from="-160" to="${W}" dur="4.5s" repeatCount="indefinite"/></rect>`));
-  hdr("h-stack", "01", "Stack", "what I build with");
-  hdr("h-analytics", "02", "Analytics", "live from the GitHub API");
+  hdr("h-analytics", "01", "Analytics", "live from GitHub");
+  hdr("h-stack", "02", "Stack", "what I build with");
   hdr("h-projects", "03", "Projects", "pinned · auto-updated daily");
   hdr("h-repos", "04", "Latest repositories", "git log --since=recent");
   hdr("h-notes", "05", "Engineering notes", "how I build");
@@ -390,6 +390,55 @@ function statsSvg(d) {
   write(G("stats.svg"), svgDoc(W, H, "GitHub stats", "", `<rect width="${W}" height="${H}" fill="${BG}"/>${win(0, 0, W, H, "~/github — live counters", G2)}${cells}`));
 }
 
+/** Contribution heatmap from GitHub's public contributions fragment (no token or API quota needed). */
+async function buildContrib() {
+  let cells = [];
+  if (MOCK) {
+    const start = new Date(); start.setUTCDate(start.getUTCDate() - 52 * 7 - new Date().getUTCDay());
+    for (let i = 0; i < 52 * 7 + new Date().getUTCDay() + 1; i++) {
+      const d = new Date(start.getTime() + i * 86400000), n = rnd() < 0.55 ? 0 : Math.floor(rnd() * 9);
+      cells.push({ date: d.toISOString().slice(0, 10), row: d.getUTCDay(), col: Math.floor(i / 7), count: n, level: n === 0 ? 0 : Math.min(4, 1 + Math.floor(n / 3)) });
+    }
+  } else {
+    try {
+      const r = await fetch(`https://github.com/users/${USER}/contributions`, { headers: { "User-Agent": "Mozilla/5.0 (profile-readme-builder)" } });
+      if (!r.ok) throw new Error(`contributions -> ${r.status}`);
+      const html = await r.text();
+      const tips = new Map([...html.matchAll(/<tool-tip[^>]*for="([^"]+)"[^>]*>([^<]+)<\/tool-tip>/g)].map((m) => [m[1], (m[2].match(/^(\d+) contribution/) || [0, "0"])[1]]));
+      cells = [...html.matchAll(/<td[^>]*data-date="([\d-]+)"[^>]*id="contribution-day-component-(\d+)-(\d+)"[^>]*data-level="(\d)"/g)].map((m) => ({ date: m[1], row: +m[2], col: +m[3], level: +m[4], count: +(tips.get(`contribution-day-component-${m[2]}-${m[3]}`) || 0) }));
+      if (cells.length < 200) throw new Error("calendar not found in response");
+    } catch (e) { console.warn("contributions unavailable, keeping existing contrib.svg:", e.message); return; }
+  }
+  const W = 900, pitch = 16, x0 = 24, y0 = 56;
+  const cols = Math.max(...cells.map((c) => c.col)) + 1;
+  const sorted = [...cells].sort((a, b) => a.date.localeCompare(b.date));
+  const total = sorted.reduce((n, c) => n + c.count, 0), active = sorted.filter((c) => c.count > 0).length;
+  let best = 0, run = 0, longest = 0;
+  for (const c of sorted) { best = Math.max(best, c.count); run = c.count > 0 ? run + 1 : 0; longest = Math.max(longest, run); }
+  let current = 0;
+  for (let i = sorted.length - 1; i >= 0; i--) { if (sorted[i].count > 0) current++; else if (i !== sorted.length - 1) break; }
+  const fills = [["#fff", 0.06], [G2, 0.3], [G2, 0.55], [FG, 0.85], [G3, 1]];
+  const byCol = new Map();
+  for (const c of cells) { if (!byCol.has(c.col)) byCol.set(c.col, []); byCol.get(c.col).push(c); }
+  const months = []; let lastMonth = "", lastLabelCol = -9;
+  const cellEls = [...byCol.entries()].sort((a, b) => a[0] - b[0]).map(([col, list]) => {
+    const first = list.reduce((a, b) => (a.row < b.row ? a : b));
+    const m = new Date(first.date + "T00:00:00Z").toLocaleString("en", { month: "short", timeZone: "UTC" });
+    if (m !== lastMonth && col < cols - 1 && col - lastLabelCol >= 3) { lastLabelCol = col; months.push(`<text x="${x0 + col * pitch}" y="48" font-family="${MONO}" font-size="10" fill="${DIM}">${m}</text>`); lastMonth = m; }
+    const rects = list.map((c) => { const [f, o] = fills[c.level]; return `<rect x="${x0 + col * pitch}" y="${y0 + c.row * pitch}" width="13" height="13" rx="2" fill="${f}" fill-opacity="${o}"><title>${c.count} contributions on ${c.date}</title></rect>`; }).join("");
+    return `<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="${(0.05 + col * 0.025).toFixed(3)}s" dur="0.4s" fill="freeze"/>${rects}</g>`;
+  }).join("\n");
+  const H = y0 + 7 * pitch + 58;
+  const stat = (x, k, v) => `<text x="${x}" y="${H - 16}" font-family="${MONO}" font-size="11" fill="${MUT}">${k} <tspan fill="${FG}" font-weight="700">${v}</tspan></text>`;
+  const legendX = W - 24 - (5 * 16 + 78);
+  const legend = `<text x="${legendX}" y="${H - 16}" font-family="${MONO}" font-size="10" fill="${DIM}">less</text>` + fills.map(([f, o], i) => `<rect x="${legendX + 30 + i * 16}" y="${H - 26}" width="13" height="13" rx="2" fill="${f}" fill-opacity="${o}"/>`).join("") + `<text x="${legendX + 30 + 5 * 16 + 4}" y="${H - 16}" font-family="${MONO}" font-size="10" fill="${DIM}">more</text>`;
+  write(G("contrib.svg"), svgDoc(W, H, `Contribution graph: ${total} contributions in the last year`, "", `<rect width="${W}" height="${H}" fill="${BG}"/>${win(0, 0, W, H, `~/contributions — last 12 months · ${total} total`, G2)}
+${months.join("")}
+${cellEls}
+${stat(24, "active days", active)}${stat(170, "longest streak", longest + " d")}${stat(330, "current streak", current + " d")}${stat(490, "best day", best)}
+${legend}`));
+}
+
 /* ═════════════════ README markers ═════════════════ */
 function replaceBlock(md, name, inner) {
   const re = new RegExp(`(<!--${name}:START-->)[\\s\\S]*?(<!--${name}:END-->)`);
@@ -399,6 +448,7 @@ function replaceBlock(md, name, inner) {
 
 async function main() {
   buildHero(); buildStack(); buildNotes(); buildChrome(); buildBadges();
+  await buildContrib();
   let data;
   try { data = await fetchData(); } catch (e) { console.warn("GitHub API unavailable, keeping existing generated files:", e.message); return; }
   const byName = data.bySlim || new Map(data.repos.map((r) => [r.name, r]));

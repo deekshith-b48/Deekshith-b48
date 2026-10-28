@@ -1,59 +1,116 @@
-
-<!-- Banner Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=300&section=header&text=Deekshith%20B%20Gowda&fontSize=70&fontAlignY=35&desc=Web3%20Developer%20|%20Full-Stack%20Engineer%20|%20AI%20Tools%20Specialist&descSize=30&descAlignY=55" />
+  <img src="assets/header.svg" alt="Deekshith B Gowda — Web3 · Full-Stack · AI Tools" width="100%"/>
 </div>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" alt="Developer Animation" width="100%" style="max-width:900px; border-radius: 8px; margin-top: 16px;"/>
-</div>
-
-<!-- Profile badges and typing effect -->
-<div align="center">
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=deekshith-b48&style=for-the-badge&color=blueviolet" alt="profile views"/>
-    <a href="https://github.com/deekshith-b48?tab=followers">
-      <img src="https://img.shields.io/github/followers/deekshith-b48?color=10b981&logo=github&style=for-the-badge" alt="followers"/>
-    </a>
-  </p>
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=A177FE&center=true&vCenter=true&width=600&height=70&lines=Web3+Developer;Full-Stack+Engineer;AI+Tools+Specialist;Always+Innovating+%F0%9F%94%A5" alt="Typing SVG" />
-</div>
-
-<!-- GitHub Stats Section -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/VdoIFLsMIlwzfKD520/giphy.gif" width="25px">
-  <span style="color:#A177FE;">GITHUB ANALYTICS</span>
-</h2>
 
 <p align="center">
-  <a href="https://github.com/deekshith-b48">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=deekshith-b48&theme=radical&hide_border=true&background=0D1117&stroke=A177FE&ring=A177FE&fire=A177FE" alt="Deekshith's GitHub Streak"/>
-  </a>
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=deekshith-b48&style=for-the-badge&color=ff3df2&labelColor=0b0b10"/>
+  <a href="https://github.com/deekshith-b48?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/deekshith-b48?style=for-the-badge&logo=github&color=2ee6ff&labelColor=0b0b10"/></a>
+  <a href="https://its-deekshith.space"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-its--deekshith.space-0b0b10?style=for-the-badge&labelColor=ff3df2"/></a>
+  <a href="mailto:bdeekshith41@gmail.com"><img alt="Email" src="https://img.shields.io/badge/CONTACT-bdeekshith41%40gmail.com-0b0b10?style=for-the-badge&labelColor=ff9b2f"/></a>
 </p>
 
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&icon_color=A177FE" />
-      </td>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deekshith-b48&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177FE&layout=compact" />
-      </td>
-    </tr>
-  </table>
+  <img src="assets/banner-bar.svg" alt="dev room" width="100%"/>
+  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" alt="Developer Animation" width="100%"/>
+  <img src="assets/divider.svg" alt="" width="100%"/>
 </div>
 
-<!-- GitHub Activity Graph -->
+<img src="assets/about.svg" alt="About me" width="100%"/>
+
+<img src="assets/divider.svg" alt="" width="100%"/>
+
+<h2 align="center">⚡ TECH STACK</h2>
+
+<table>
+  <tr>
+    <td width="150" align="right"><b><code>Languages</code></b></td>
+    <td><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0b0b10?style=for-the-badge&logo=javascript&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0b0b10?style=for-the-badge&logo=typescript&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Python" src="https://img.shields.io/badge/Python-0b0b10?style=for-the-badge&logo=python&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Java" src="https://img.shields.io/badge/Java-0b0b10?style=for-the-badge&logo=openjdk&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Solidity" src="https://img.shields.io/badge/Solidity-0b0b10?style=for-the-badge&logo=solidity&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="HTML5" src="https://img.shields.io/badge/HTML5-0b0b10?style=for-the-badge&logo=html5&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="CSS3" src="https://img.shields.io/badge/CSS3-0b0b10?style=for-the-badge&logo=css3&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Shell Script" src="https://img.shields.io/badge/Shell_Script-0b0b10?style=for-the-badge&logo=gnubash&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>Frontend</code></b></td>
+    <td><img alt="React" src="https://img.shields.io/badge/React-0b0b10?style=for-the-badge&logo=react&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="Next.js" src="https://img.shields.io/badge/Next.js-0b0b10?style=for-the-badge&logo=nextdotjs&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="Vite" src="https://img.shields.io/badge/Vite-0b0b10?style=for-the-badge&logo=vite&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-0b0b10?style=for-the-badge&logo=tailwindcss&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="Builder.io" src="https://img.shields.io/badge/Builder.io-0b0b10?style=for-the-badge&logo=builderdotio&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="PDF.js" src="https://img.shields.io/badge/PDF.js-0b0b10?style=for-the-badge&logo=mozilla&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>Backend &amp; DB</code></b></td>
+    <td><img alt="Node.js" src="https://img.shields.io/badge/Node.js-0b0b10?style=for-the-badge&logo=nodedotjs&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="Express.js" src="https://img.shields.io/badge/Express.js-0b0b10?style=for-the-badge&logo=express&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0b0b10?style=for-the-badge&logo=fastapi&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-0b0b10?style=for-the-badge&logo=graphql&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-0b0b10?style=for-the-badge&logo=mongodb&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0b0b10?style=for-the-badge&logo=postgresql&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="Supabase" src="https://img.shields.io/badge/Supabase-0b0b10?style=for-the-badge&logo=supabase&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>AI / ML</code></b></td>
+    <td><img alt="Scikit-learn" src="https://img.shields.io/badge/Scikit--learn-0b0b10?style=for-the-badge&logo=scikitlearn&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="spaCy" src="https://img.shields.io/badge/spaCy-0b0b10?style=for-the-badge&logo=spacy&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-0b0b10?style=for-the-badge&logo=streamlit&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging_Face-0b0b10?style=for-the-badge&logo=huggingface&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="LIME" src="https://img.shields.io/badge/LIME-0b0b10?style=for-the-badge&logo=python&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-0b0b10?style=for-the-badge&logo=jupyter&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-0b0b10?style=for-the-badge&logo=opencv&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>Web3</code></b></td>
+    <td><img alt="Ethereum" src="https://img.shields.io/badge/Ethereum-0b0b10?style=for-the-badge&logo=ethereum&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Solidity" src="https://img.shields.io/badge/Solidity-0b0b10?style=for-the-badge&logo=solidity&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Smart Contracts" src="https://img.shields.io/badge/Smart_Contracts-0b0b10?style=for-the-badge&logo=ethereum&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Protocol Analysis" src="https://img.shields.io/badge/Protocol_Analysis-0b0b10?style=for-the-badge&logo=ethereum&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Hardhat" src="https://img.shields.io/badge/Hardhat-0b0b10?style=for-the-badge&logo=hardhat&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/> <img alt="Web3.js" src="https://img.shields.io/badge/Web3.js-0b0b10?style=for-the-badge&logo=web3dotjs&logoColor=ff3df2&labelColor=0b0b10&color=0b0b10"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>Cyber &amp; DevOps</code></b></td>
+    <td><img alt="Network Security" src="https://img.shields.io/badge/Network_Security-0b0b10?style=for-the-badge&labelColor=0b0b10&color=ff3df2"/> <img alt="Packet Analysis" src="https://img.shields.io/badge/Packet_Analysis-0b0b10?style=for-the-badge&logo=wireshark&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="Threat Detection" src="https://img.shields.io/badge/Threat_Detection-0b0b10?style=for-the-badge&labelColor=0b0b10&color=2ee6ff"/> <img alt="Docker" src="https://img.shields.io/badge/Docker-0b0b10?style=for-the-badge&logo=docker&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="Git" src="https://img.shields.io/badge/Git-0b0b10?style=for-the-badge&logo=git&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-0b0b10?style=for-the-badge&logo=powershell&logoColor=2ee6ff&labelColor=0b0b10&color=0b0b10"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>Design</code></b></td>
+    <td><img alt="Figma" src="https://img.shields.io/badge/Figma-0b0b10?style=for-the-badge&logo=figma&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="Canva" src="https://img.shields.io/badge/Canva-0b0b10?style=for-the-badge&logo=canva&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="Framer" src="https://img.shields.io/badge/Framer-0b0b10?style=for-the-badge&logo=framer&logoColor=2a7fff&labelColor=0b0b10&color=0b0b10"/> <img alt="UI/UX" src="https://img.shields.io/badge/UI/UX-0b0b10?style=for-the-badge&labelColor=0b0b10&color=2a7fff"/> <img alt="PDF Generation" src="https://img.shields.io/badge/PDF_Generation-0b0b10?style=for-the-badge&labelColor=0b0b10&color=2a7fff"/></td>
+  </tr>
+  <tr>
+    <td width="150" align="right"><b><code>AI Platforms</code></b></td>
+    <td><img alt="ChatGPT" src="https://img.shields.io/badge/ChatGPT-0b0b10?style=for-the-badge&logo=openai&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="Gemini API" src="https://img.shields.io/badge/Gemini_API-0b0b10?style=for-the-badge&logo=google&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="OpenAI API" src="https://img.shields.io/badge/OpenAI_API-0b0b10?style=for-the-badge&logo=openai&logoColor=ff9b2f&labelColor=0b0b10&color=0b0b10"/> <img alt="Midjourney" src="https://img.shields.io/badge/Midjourney-0b0b10?style=for-the-badge&labelColor=0b0b10&color=ff9b2f"/> <img alt="Leonardo AI" src="https://img.shields.io/badge/Leonardo_AI-0b0b10?style=for-the-badge&labelColor=0b0b10&color=ff9b2f"/> <img alt="Runway ML" src="https://img.shields.io/badge/Runway_ML-0b0b10?style=for-the-badge&labelColor=0b0b10&color=ff9b2f"/></td>
+  </tr>
+</table>
+
 <p align="center">
-  <a href="https://github.com/deekshith-b48">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=0D1117&color=A177FE&line=A177FE&point=FFFFFF&area=true&area_color=A177FE&hide_border=true" alt="Deekshith's Contribution Graph" />
-  </a>
+  <img src="assets/generated/languages.svg" alt="Top languages across my repositories (live)" width="55%"/>
 </p>
 
-<!-- Snake Game Animation -->
+<img src="assets/divider.svg" alt="" width="100%"/>
+
+<h2 align="center">🚀 FEATURED PROJECTS</h2>
+
+<!--FEATURED:START-->
+<table>
+  <tr>
+    <td width="50%"><a href="https://github.com/deekshith-b48/portfolio"><img src="assets/generated/featured-1.svg" alt="portfolio" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/Daily-LeetCode"><img src="assets/generated/featured-2.svg" alt="Daily-LeetCode" width="100%"/></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/deekshith-b48/Qivra"><img src="assets/generated/featured-3.svg" alt="Qivra" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/Gymmie"><img src="assets/generated/featured-4.svg" alt="Gymmie" width="100%"/></a></td>
+  </tr>
+</table>
+
+<p align="center"><sub>Most recently updated repositories · refreshed automatically every day</sub></p>
+<!--FEATURED:END-->
+
+<h2 align="center">🛰️ LATEST REPOS</h2>
+
+<img src="assets/generated/latest.svg" alt="Latest repositories (live)" width="100%"/>
+
+<!--LATEST:START-->
+<p align="center"><sub><a href="https://github.com/deekshith-b48/portfolio">portfolio</a> · <a href="https://github.com/deekshith-b48/Daily-LeetCode">Daily-LeetCode</a> · <a href="https://github.com/deekshith-b48/Qivra">Qivra</a> · <a href="https://github.com/deekshith-b48/Gymmie">Gymmie</a> · <a href="https://github.com/deekshith-b48/NoLava">NoLava</a> · <a href="https://github.com/deekshith-b48/PlanBee">PlanBee</a></sub></p>
+<!--LATEST:END-->
+
+<p align="center">
+  <a href="https://github.com/deekshith-b48?tab=repositories"><img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-0b0b10?style=for-the-badge&logo=github&logoColor=ff3df2&labelColor=0b0b10"/></a>
+</p>
+
+<img src="assets/divider.svg" alt="" width="100%"/>
+
+<h2 align="center">📡 GITHUB ANALYTICS</h2>
+
+<img src="assets/generated/stats.svg" alt="GitHub stats (live)" width="100%"/>
+
+<p align="center">
+  <a href="https://github.com/deekshith-b48"><img height="170" alt="GitHub streak" src="https://streak-stats.demolab.com/?user=deekshith-b48&background=0b0b10&border=ff3df2&ring=ff3df2&fire=ff9b2f&currStreakLabel=2ee6ff&currStreakNum=f2f2f2&sideLabels=8a8a99&sideNums=f2f2f2&dates=8a8a99&stroke=2a7fff"/></a>
+  <a href="https://github.com/deekshith-b48"><img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&count_private=true&hide_border=false&bg_color=0b0b10&border_color=ff3df2&title_color=ff3df2&icon_color=2ee6ff&text_color=f2f2f2"/></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/deekshith-b48"><img alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=0b0b10&color=ff3df2&line=2ee6ff&point=f2f2f2&area=true&area_color=ff3df2&hide_border=true"/></a>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48&theme=tokyonight&no-bg=true&no-frame=true&margin-w=12&margin-h=12&column=7" alt="GitHub trophies"/>
+</p>
+
 <div align="center">
-  <h3>🐍 Contribution Snake Game</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/deekshith-b48/deekshith-b48/output/github-contribution-grid-snake-dark.svg">
@@ -61,236 +118,17 @@
   </picture>
 </div>
 
-<!-- GitHub Trophies -->
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deekshith-b48&theme=radical&margin-w=15&margin-h=15&no-bg=true&no-frame=true&column=7" alt="GitHub Trophies" />
-</p>
+<img src="assets/divider.svg" alt="" width="100%"/>
 
----
-
-## 👨‍💻 About Me
-```js
-const deekshith = {
-  name: "Deekshith B Gowda",
-  roles: ["Undergraduate Intern", "AI/ML Engineer", "Web3 Enthusiast", "Blockchain Developer", "UI/UX Designer"],
-  location: "Bengaluru, Karnataka, India",
-  education: "B.E. in CSE – Cambridge Institute of Technology (2022–2026)",
-  focus: ["AI/ML Systems", "Cybersecurity", "Legal-Tech Solutions", "Financial Applications", "Protocol Analysis"],
-  skills: {
-    frontend: ["React", "Next.js", "Tailwind CSS", "JavaScript", "TypeScript", "HTML", "CSS", "Vite"],
-    backend: ["Node.js", "Express.js", "FastAPI", "GraphQL", "MongoDB", "PostgreSQL", "Supabase"],
-    aiMl: ["Python", "Scikit-learn", "spaCy", "LIME", "Streamlit", "Hugging Face", "NLP", "Computer Vision"],
-    web3: ["Solidity", "Ethereum", "Smart Contracts", "Blockchain", "Protocol Analysis", "Network Security"],
-    cybersecurity: ["Packet Analysis", "Anomaly Detection", "Threat Assessment", "Network Monitoring", "Steganography"],
-    design: ["Figma", "Canva", "Framer", "Builder.io", "UI/UX", "PDF Generation"],
-    tools: ["Git", "Docker", "Shell Scripting", "PowerShell", "MERN Stack", "LIME Interpretability"]
-  },
-  currentProjects: [
-    "Daily LeetCode Challenge (Oct-Dec 2025)",
-    "AI-Powered Legal Compliance Analysis",
-    "Advanced Cybersecurity Threat Detection",
-    "Financial Planning & Expense Tracking"
-  ],
-  achievements: {
-    consistentCoding: "Daily problem-solving discipline",
-    realWorldImpact: "Legal-tech and cybersecurity solutions",
-    diverseSkills: "Full-stack to AI/ML expertise"
-  },
-  sayHi: () => "Building AI-powered solutions for real-world challenges! Let's innovate together! 🚀"
-}
-```
-
----
-
-## 🚀 Tech Stack
-
-### 💻 Programming Languages
+<h2 align="center">💻 CODING PROFILES &amp; CONTACT</h2>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
+  <a href="https://leetcode.com/deekshith_b48/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-0b0b10?style=for-the-badge&logo=leetcode&logoColor=ff9b2f&labelColor=0b0b10"/></a>
+  <a href="https://www.codechef.com/users/deekshith_b48"><img alt="CodeChef" src="https://img.shields.io/badge/CodeChef-0b0b10?style=for-the-badge&logo=codechef&logoColor=ff3df2&labelColor=0b0b10"/></a>
+  <a href="https://www.hackerrank.com/profile/bdeekshith41"><img alt="HackerRank" src="https://img.shields.io/badge/HackerRank-0b0b10?style=for-the-badge&logo=hackerrank&logoColor=2ee6ff&labelColor=0b0b10"/></a>
+  <a href="https://linkedin.com/in/deekshithb48"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0b0b10?style=for-the-badge&logo=linkedin&logoColor=2a7fff&labelColor=0b0b10"/></a>
+  <a href="https://x.com/deekshith_b48"><img alt="X" src="https://img.shields.io/badge/X-0b0b10?style=for-the-badge&logo=x&logoColor=f2f2f2&labelColor=0b0b10"/></a>
+  <a href="mailto:bdeekshith41@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-0b0b10?style=for-the-badge&logo=gmail&logoColor=ff3df2&labelColor=0b0b10"/></a>
 </p>
 
-### 🌐 Frontend Development
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Builder.io-000000?style=for-the-badge&logo=builder.io&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML2Canvas-FF4B4B?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PDF.js-FF6B35?style=for-the-badge&logo=mozilla&logoColor=white"/>
-</p>
-
-### ⚙️ Backend & Databases
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GraphQL-E434AA?style=for-the-badge&logo=graphql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
-</p>
-
-### 🤖 AI/ML & Data Science
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
-  <img src="https://img.shields.io/badge/LIME-32CD32?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
-</p>
-
-### 🔗 Web3 & Blockchain
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Smart_Contracts-FF6B35?style=for-the-badge&logo=ethereum&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Protocol_Analysis-326CE5?style=for-the-badge&logo=ethereum&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hardhat-F7DF1E?style=for-the-badge&logo=hardhat&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white"/>
-</p>
-
-### 🔒 Cybersecurity & DevOps
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Network_Security-FF0000?style=for-the-badge&logo=security&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Packet_Analysis-000000?style=for-the-badge&logo=wireshark&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Threat_Detection-FF6B35?style=for-the-badge&logo=security&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white"/>
-</p>
-
-### 🎨 Design & Creative Tools
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Framer-0055FF?style=for-the-badge&logo=framer&logoColor=white"/>
-  <img src="https://img.shields.io/badge/UI/UX-FF6B35?style=for-the-badge&logo=adobe&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PDF_Generation-E53E3E?style=for-the-badge&logo=adobe&logoColor=white"/>
-</p>
-
-### 🤖 AI Platforms & APIs
-
-<p align="center">
-  <img src="https://img.shields.io/badge/ChatGPT-10a37f?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Gemini_API-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI_API-FF6B35?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Midjourney-111111?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Leonardo%20AI-440381?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Runway%20ML-000000?style=for-the-badge&logoColor=white"/>
-</p>
-
----
-
-## 🌟 Featured Projects
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <h4>⚖️ <a href="https://github.com/deekshith-b48/PoliGap">PoliGap</a></h4>
-      <p>AI-powered React application for legal compliance teams to analyze policy documents, identify gaps & generate remediation plans.</p>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react"/>
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript"/>
-      <img src="https://img.shields.io/badge/AI-FF6B35?style=flat-square&logo=openai"/>
-    </td>
-    <td width="50%" align="center">
-      <h4>🔒 <a href="https://github.com/deekshith-b48/ZeroHack">ZeroHack</a></h4>
-      <p>AI-driven cybersecurity tool for advanced network packet analysis, protocol anomaly detection & threat assessment.</p>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript"/>
-      <img src="https://img.shields.io/badge/AI-FF6B35?style=flat-square&logo=openai"/>
-      <img src="https://img.shields.io/badge/Security-000000?style=flat-square&logo=security"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <h4>� <a href="https://github.com/deekshith-b48/ExpenseTracker">ExpenseTracker</a></h4>
-      <p>MERN stack financial tool for expense tracking, spending visualization & financial planning with secure authentication.</p>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react"/>
-      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js"/>
-      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb"/>
-    </td>
-    <td width="50%" align="center">
-      <h4>🔍 <a href="https://github.com/deekshith-b48/sentiment-analysis">Sentiment Analysis</a></h4>
-      <p>End-to-end ML system with spaCy preprocessing, multiple classifiers, LIME interpretability & FastAPI + Streamlit interface.</p>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python"/>
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi"/>
-      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit"/>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <h4>🏗️ <a href="https://github.com/deekshith-b48/Buildify">Buildify</a></h4>
-      <p>Modern TypeScript-based build automation and project management platform for developers.</p>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript"/>
-      <img src="https://img.shields.io/badge/Build Tools-FF6B35?style=flat-square&logo=webpack"/>
-      <img src="https://img.shields.io/badge/DevOps-326CE5?style=flat-square&logo=kubernetes"/>
-    </td>
-    <td width="50%" align="center">
-      <h4>�️ <a href="https://github.com/deekshith-b48/AI-Powered-Worker-Safety-Well-Being-Systemm">AI Worker Safety System</a></h4>
-      <p>AI-powered safety monitoring system for worker well-being and hazard detection in industrial environments.</p>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python"/>
-      <img src="https://img.shields.io/badge/Computer Vision-FF6B35?style=flat-square&logo=opencv"/>
-      <img src="https://img.shields.io/badge/IoT-326CE5?style=flat-square&logo=internetofthings"/>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <a href="https://github.com/deekshith-b48?tab=repositories">
-    <img src="https://img.shields.io/badge/View_All_Projects-4285F4?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-</p>
-
-
-## 💻 Coding Profiles
-
-<div align="center" style="margin-top: 20px;">
-  <a href="https://leetcode.com/deekshith_b48/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
-  </a>
-  <a href="https://www.codechef.com/users/deekshith_b48" target="_blank">
-    <img src="https://img.shields.io/badge/CodeChef-%23964B00.svg?style=for-the-badge&logo=CodeChef&logoColor=white" alt="CodeChef"/>
-  </a>
-  <a href="https://www.hackerrank.com/profile/bdeekshith41" target="_blank">
-    <img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank"/>
-  </a>
-</div>
-
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=A177FE&center=true&vCenter=true&random=false&width=600&height=60&lines=Thanks+for+visiting+my+profile!;Let's+collaborate+on+something+amazing!;Always+open+to+new+opportunities+and+connections!" alt="Typing SVG" />
-  </a>
-  
-  <div style="margin-top: 20px;">
-    <a href="https://linkedin.com/in/deekshithb48" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-    </a>
-    <a href="mailto:bdeekshith41@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-    </a>
-    <a href="https://github.com/deekshith-b48" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-    </a>
-  </div>
-  </p>
-</div>
-
-<!-- Animated Footer -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,12,24,30&height=170&section=footer&text=Let's%20Connect%20and%20Innovate!&fontSize=40&fontColor=fff&animation=fadeIn&fontAlignY=70" />
+<p align="center"><sub><code>sections above marked “live” refresh automatically — repo cards and stats are rebuilt daily by a GitHub Action</code></sub></p>

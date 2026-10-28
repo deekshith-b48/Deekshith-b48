@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="26" viewBox="0 0 900 26" role="img" aria-label="divider">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff3df2" stop-opacity="0"/><stop offset="0.5" stop-color="#ff3df2"/><stop offset="1" stop-color="#2ee6ff" stop-opacity="0"/></linearGradient>
+<linearGradient id="sweep" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<rect width="900" height="26" fill="#050505"/><rect x="20" y="12" width="860" height="2" fill="url(#g)"/>
+<rect x="-120" y="12" width="120" height="2" fill="url(#sweep)"><animate attributeName="x" from="-120" to="900" dur="3.6s" repeatCount="indefinite"/></rect>
+<path d="M450 5l8 8-8 8-8-8z" fill="#050505" stroke="#ff3df2" stroke-width="1.5"/><path d="M430 13h6M464 13h6" stroke="#2ee6ff" stroke-width="2"/>
+</svg>

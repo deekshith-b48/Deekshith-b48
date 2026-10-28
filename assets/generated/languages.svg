@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="250" viewBox="0 0 440 250" role="img" aria-label="Top languages">
+<defs></defs>
+<rect width="440" height="250" fill="#050505"/><g transform="translate(0 0)">
+<rect x="0.5" y="0.5" width="439" height="249" rx="8" fill="#0b0b10" stroke="#ff9b2f" stroke-opacity="0.45"/>
+<rect x="1" y="1" width="438" height="28" rx="7" fill="#fff" fill-opacity="0.03"/>
+<line x1="1" y1="29" x2="439" y2="29" stroke="#ff9b2f" stroke-opacity="0.25"/>
+<circle cx="18" cy="15" r="4.5" fill="#ff3df2"/><circle cx="34" cy="15" r="4.5" fill="#ff9b2f"/><circle cx="50" cy="15" r="4.5" fill="#2ee6ff"/>
+<text x="68" y="19" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#8a8a99">~/top-languages (all own repos)</text>
+<path d="M-1 12v-13h13M428 -1h13v13M441 238v13h-13M12 251h-13v-13" fill="none" stroke="#ff9b2f" stroke-width="2" transform="translate(0 0)"/>
+</g><text x="20" y="67" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#f2f2f2">JavaScript</text>
+<rect x="140" y="56" width="250" height="12" rx="2" fill="#fff" fill-opacity="0.05"/>
+<rect x="140" y="56" width="0" height="12" rx="2" fill="#f1e05a"><animate attributeName="width" from="0" to="129.6" begin="0.2s" dur="0.8s" fill="freeze"/></rect>
+<text x="420" y="67" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8a8a99">51.8%</text>
+<text x="20" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#f2f2f2">TypeScript</text>
+<rect x="140" y="86" width="250" height="12" rx="2" fill="#fff" fill-opacity="0.05"/>
+<rect x="140" y="86" width="0" height="12" rx="2" fill="#3178c6"><animate attributeName="width" from="0" to="68.9" begin="0.32s" dur="0.8s" fill="freeze"/></rect>
+<text x="420" y="97" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8a8a99">27.5%</text>
+<text x="20" y="127" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#f2f2f2">Dart</text>
+<rect x="140" y="116" width="250" height="12" rx="2" fill="#fff" fill-opacity="0.05"/>
+<rect x="140" y="116" width="0" height="12" rx="2" fill="#00B4AB"><animate attributeName="width" from="0" to="20.0" begin="0.44s" dur="0.8s" fill="freeze"/></rect>
+<text x="420" y="127" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8a8a99">8.0%</text>
+<text x="20" y="157" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#f2f2f2">Python</text>
+<rect x="140" y="146" width="250" height="12" rx="2" fill="#fff" fill-opacity="0.05"/>
+<rect x="140" y="146" width="0" height="12" rx="2" fill="#3572A5"><animate attributeName="width" from="0" to="16.2" begin="0.56s" dur="0.8s" fill="freeze"/></rect>
+<text x="420" y="157" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8a8a99">6.5%</text>
+<text x="20" y="187" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#f2f2f2">HTML</text>
+<rect x="140" y="176" width="250" height="12" rx="2" fill="#fff" fill-opacity="0.05"/>
+<rect x="140" y="176" width="0" height="12" rx="2" fill="#e34c26"><animate attributeName="width" from="0" to="6.0" begin="0.6799999999999999s" dur="0.8s" fill="freeze"/></rect>
+<text x="420" y="187" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8a8a99">2.4%</text>
+<text x="20" y="217" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#f2f2f2">CSS</text>
+<rect x="140" y="206" width="250" height="12" rx="2" fill="#fff" fill-opacity="0.05"/>
+<rect x="140" y="206" width="0" height="12" rx="2" fill="#563d7c"><animate attributeName="width" from="0" to="6.0" begin="0.8s" dur="0.8s" fill="freeze"/></rect>
+<text x="420" y="217" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#8a8a99">1.5%</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="220" viewBox="0 0 440 220" role="img" aria-label="portfolio project card">
+<defs></defs>
+<rect width="440" height="220" fill="#050505"/>
+<g transform="translate(0 0)">
+<rect x="0.5" y="0.5" width="439" height="219" rx="8" fill="#0b0b10" stroke="#ff3df2" stroke-opacity="0.45"/>
+<rect x="1" y="1" width="438" height="28" rx="7" fill="#fff" fill-opacity="0.03"/>
+<line x1="1" y1="29" x2="439" y2="29" stroke="#ff3df2" stroke-opacity="0.25"/>
+<circle cx="18" cy="15" r="4.5" fill="#ff3df2"/><circle cx="34" cy="15" r="4.5" fill="#ff9b2f"/><circle cx="50" cy="15" r="4.5" fill="#2ee6ff"/>
+<text x="68" y="19" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#8a8a99">~/featured/portfolio</text>
+<path d="M-1 12v-13h13M428 -1h13v13M441 208v13h-13M12 221h-13v-13" fill="none" stroke="#ff3df2" stroke-width="2" transform="translate(0 0)"/>
+</g>
+<text x="20" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="19" font-weight="800" fill="#f2f2f2">portfolio</text>
+<text x="420" y="62" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#ff9b2f">★ 0</text>
+<text x="20" y="88" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" fill="#8a8a99">No description yet — the code speaks for itself.</text>
+<text x="20" y="136" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="2" fill="#55556a">STACK</text>
+<text x="420" y="136" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#55556a">pushed today</text>
+<rect x="20.0" y="148" width="387.9" height="6" fill="#3178c6"/><rect x="407.9" y="148" width="9.4" height="6" fill="#563d7c"/><rect x="417.3" y="148" width="4.0" height="6" fill="#e34c26"/><rect x="421.3" y="148" width="4.0" height="6" fill="#f1e05a"/><circle cx="24" cy="172" r="4" fill="#3178c6"/><text x="33" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8a8a99">TypeScript 97%</text><circle cx="139.39999999999998" cy="172" r="4" fill="#563d7c"/><text x="148.39999999999998" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8a8a99">CSS 2%</text><circle cx="205.99999999999997" cy="172" r="4" fill="#e34c26"/><text x="214.99999999999997" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8a8a99">HTML 1%</text><circle cx="278.69999999999993" cy="172" r="4" fill="#f1e05a"/><text x="287.69999999999993" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8a8a99">JavaScript 0%</text>
+</svg>

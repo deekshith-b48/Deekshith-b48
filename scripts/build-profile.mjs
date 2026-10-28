@@ -198,7 +198,7 @@ ${right ? `<text x="${W - 20}" y="25" text-anchor="end" font-family="${MONO}" fo
 <rect x="-160" y="37" width="160" height="2" fill="url(#sw)"><animate attributeName="x" from="-160" to="${W}" dur="4.5s" repeatCount="indefinite"/></rect>`));
   hdr("h-analytics", "01", "Analytics", "live from GitHub");
   hdr("h-stack", "02", "Stack", "what I build with");
-  hdr("h-projects", "03", "Projects", "newest projects · auto-updated daily");
+  hdr("h-projects", "03", "Projects", "selected projects · auto-updated daily");
   hdr("h-repos", "04", "Latest repositories", "git log --since=recent");
   hdr("h-notes", "05", "Engineering notes", "how I build");
   hdr("h-connect", "06", "Elsewhere", "");
@@ -241,12 +241,17 @@ const MOCK_DATA = {
 
 /* ───────────── featured-project engine ───────────── */
 // Featured = the newest *real* projects. Practice/log repos, forks, empty-description and tiny repos never qualify.
-const EXCLUDE = ["Daily-LeetCode", "Master-Software-Engineering"];             // always skipped (edit freely)
+const FEATURED_ONLY = ["Qivra", "PlanBee", "prysm.io", "we3chat"];            // hand-picked list, shown in this order; set to [] to pick automatically
+const EXCLUDE = ["Daily-LeetCode", "Master-Software-Engineering"];             // automatic mode only: always skipped (edit freely)
 const PRACTICE_NAME_RE = /leetcode|dsa|algorithm|practice|interview|master-software|cheat|tutorial|playground|learning-log/i;
 const PRACTICE_DESC_RE = /leetcode|journey of solving|problems daily/i;
 const MIN_CODE_BYTES = 5000;
 const repoBytes = (r) => { const t = Object.values(r.languages || {}).reduce((n, b) => n + b, 0); return t >= 100 ? t : null; }; // null = unknown
 export function pickFeatured(repos, n = 4) {
+  if (FEATURED_ONLY.length) {
+    const byName = new Map(repos.map((r) => [r.name.toLowerCase(), r]));
+    return FEATURED_ONLY.map((name) => byName.get(name.toLowerCase())).filter(Boolean).slice(0, n);
+  }
   return repos
     .filter((r) => !r.fork && !r.archived && r.name.toLowerCase() !== PROFILE_REPO.toLowerCase()
       && !EXCLUDE.includes(r.name)
@@ -269,6 +274,10 @@ async function fetchData() {
     return { name: r.name, url: r.html_url, description: r.description || "", stars: r.stargazers_count, pushed: r.pushed_at, created: r.created_at, topics: r.topics || [], languages, fork: r.fork, archived: r.archived };
   };
   const repos = await Promise.all(own.slice(0, 30).map(slim));
+  for (const name of FEATURED_ONLY) {
+    if (repos.some((r) => r.name.toLowerCase() === name.toLowerCase())) continue;
+    try { repos.push(await slim(await gh(`https://api.github.com/repos/${USER}/${name}`))); } catch (e) { console.warn(`featured repo ${name} not found:`, e.message); }
+  }
   return { user, repos, ownCount: own.length, totalStars: own.reduce((n, r) => n + r.stargazers_count, 0), source: "api" };
 }
 
@@ -489,7 +498,7 @@ async function main() {
   const cell = (r, i) => `    <td width="50%"><a href="${r.url}"><img src="assets/generated/featured-${i + 1}.svg" alt="${esc(r.name)}" width="100%"/></a></td>`;
   const rowsHtml = [];
   for (let i = 0; i < featured.length; i += 2) rowsHtml.push(`  <tr>\n${[featured[i], featured[i + 1]].map((r, k) => (r ? cell(r, i + k) : `    <td width="50%"></td>`)).join("\n")}\n  </tr>`);
-  md = replaceBlock(md, "FEATURED", `<table width="100%">\n${rowsHtml.join("\n")}\n</table>\n\n<p align="center"><sub>Newest projects · refreshed automatically every day</sub></p>`);
+  md = replaceBlock(md, "FEATURED", `<table width="100%">\n${rowsHtml.join("\n")}\n</table>\n\n<p align="center"><sub>Selected projects · refreshed automatically every day</sub></p>`);
   md = replaceBlock(md, "LATEST", `<p align="center"><sub>${latest.map((r) => `<a href="${r.url}">${esc(r.name)}</a>`).join(" · ")}</sub></p>`);
   fs.writeFileSync(readmePath, md);
   console.log("README markers updated");

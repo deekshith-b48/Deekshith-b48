@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="22" viewBox="0 0 900 22" role="img" aria-label="divider">
-<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#c9d1cb" stop-opacity="0"/><stop offset="0.5" stop-color="#c9d1cb"/><stop offset="1" stop-color="#c9d1cb" stop-opacity="0"/></linearGradient>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#d0d0d0" stop-opacity="0"/><stop offset="0.5" stop-color="#d0d0d0"/><stop offset="1" stop-color="#d0d0d0" stop-opacity="0"/></linearGradient>
 <linearGradient id="s" x1="0" x2="1"><stop offset="0" stop-color="#2fae63" stop-opacity="0"/><stop offset="0.5" stop-color="#2fae63" stop-opacity="0.95"/><stop offset="1" stop-color="#2fae63" stop-opacity="0"/></linearGradient></defs>
-<rect width="900" height="22" fill="#050806"/><rect x="20" y="10" width="860" height="2" fill="url(#g)"/>
+<rect width="900" height="22" fill="#050505"/><rect x="20" y="10" width="860" height="2" fill="url(#g)"/>
 <rect x="-120" y="10" width="120" height="2" fill="url(#s)"><animate attributeName="x" from="-120" to="900" dur="3.6s" repeatCount="indefinite"/></rect>
-<path d="M450 3l8 8-8 8-8-8z" fill="#050806" stroke="#f4f7f4" stroke-width="1.5"/>
+<path d="M450 3l8 8-8 8-8-8z" fill="#050505" stroke="#2fae63" stroke-width="1.5"/>
 </svg>

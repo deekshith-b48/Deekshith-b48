@@ -20,13 +20,13 @@
     <td width="50%"><img src="assets/generated/pulse.svg" alt="Push activity over the last 30 days (live)" width="100%"/></td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub streak" width="100%" src="https://streak-stats.demolab.com/?user=deekshith-b48&background=050806&border=4a514c&ring=f4f7f4&fire=c9d1cb&currStreakLabel=2fae63&currStreakNum=2fae63&sideLabels=8c968f&sideNums=2fae63&dates=8c968f&stroke=4a514c"/></a></td>
-    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub stats" width="100%" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&count_private=true&hide_border=false&bg_color=050806&border_color=4a514c&title_color=f4f7f4&icon_color=c9d1cb&text_color=2fae63"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub streak" width="100%" src="https://streak-stats.demolab.com/?user=deekshith-b48&background=050505&border=4a4a4a&ring=f5f5f5&fire=2fae63&currStreakLabel=f5f5f5&currStreakNum=f5f5f5&sideLabels=9a9a9a&sideNums=f5f5f5&dates=9a9a9a&stroke=4a4a4a"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48"><img alt="GitHub stats" width="100%" src="https://github-readme-stats.vercel.app/api?username=deekshith-b48&show_icons=true&count_private=true&hide_border=false&bg_color=050505&border_color=4a4a4a&title_color=f5f5f5&icon_color=2fae63&text_color=f5f5f5"/></a></td>
   </tr>
 </table>
 
 <p align="center">
-  <a href="https://github.com/deekshith-b48"><img width="100%" alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=050806&color=f4f7f4&line=c9d1cb&point=2fae63&area=true&area_color=4a514c&hide_border=true"/></a>
+  <a href="https://github.com/deekshith-b48"><img width="100%" alt="Contribution graph" src="https://github-readme-activity-graph.vercel.app/graph?username=deekshith-b48&bg_color=050505&color=f5f5f5&line=d0d0d0&point=2fae63&area=true&area_color=3a3a3a&hide_border=true"/></a>
 </p>
 
 <img src="assets/h-projects.svg" alt="03 — Projects" width="100%"/>

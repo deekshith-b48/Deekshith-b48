@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="438" height="224" viewBox="0 0 438 224" role="img" aria-label="Gymmie project card">
 <defs></defs>
-<rect width="438" height="224" fill="#050806"/>
+<rect width="438" height="224" fill="#050505"/>
 <g transform="translate(0 0)">
-<rect x="0.5" y="0.5" width="437" height="223" rx="8" fill="#08100b" stroke="#c9d1cb" stroke-opacity="0.7"/>
-<rect x="1" y="1" width="436" height="28" rx="7" fill="#1c211e" fill-opacity="0.35"/>
-<line x1="1" y1="29" x2="437" y2="29" stroke="#c9d1cb" stroke-opacity="0.35"/>
-<circle cx="18" cy="15" r="4.5" fill="#f4f7f4"/><circle cx="34" cy="15" r="4.5" fill="#c9d1cb"/><circle cx="50" cy="15" r="4.5" fill="#2fae63" fill-opacity="0.8"/>
-<text x="68" y="19" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#8c968f">~/projects/Gymmie</text>
+<rect x="0.5" y="0.5" width="437" height="223" rx="8" fill="#0a0a0a" stroke="#d0d0d0" stroke-opacity="0.7"/>
+<rect x="1" y="1" width="436" height="28" rx="7" fill="#1a1a1a" fill-opacity="0.35"/>
+<line x1="1" y1="29" x2="437" y2="29" stroke="#d0d0d0" stroke-opacity="0.35"/>
+<circle cx="18" cy="15" r="4.5" fill="#2fae63"/><circle cx="34" cy="15" r="4.5" fill="#d0d0d0"/><circle cx="50" cy="15" r="4.5" fill="#f5f5f5" fill-opacity="0.8"/>
+<text x="68" y="19" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#9a9a9a">~/projects/Gymmie</text>
 </g>
-<text x="20" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="19" font-weight="800" fill="#2fae63">Gymmie</text>
-<text x="418" y="62" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#f4f7f4">★ 1</text>
-<text x="20" y="88" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" fill="#8c968f">No description yet.</text>
-<text x="20" y="136" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="2" fill="#5a615c">STACK</text>
-<text x="418" y="136" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#5a615c">pushed 6 days ago</text>
-<rect x="20" y="148" width="398" height="6" fill="#1c211e" fill-opacity="0.5"/><rect x="20.0" y="148" width="322.4" height="6" fill="#f4f7f4"/><rect x="342.4" y="148" width="50.5" height="6" fill="#c9d1cb"/><rect x="393.0" y="148" width="13.3" height="6" fill="#a3aaa5"/><rect x="406.3" y="148" width="6.3" height="6" fill="#4a514c"/><rect x="20" y="168" width="8" height="8" fill="#f4f7f4"/><text x="34" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8c968f">JavaScript 81%</text><rect x="135.39999999999998" y="168" width="8" height="8" fill="#c9d1cb"/><text x="149.39999999999998" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8c968f">Dart 13%</text><rect x="214.2" y="168" width="8" height="8" fill="#a3aaa5"/><text x="228.2" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8c968f">HTML 3%</text><rect x="286.9" y="168" width="8" height="8" fill="#4a514c"/><text x="300.9" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#8c968f">CSS 2%</text>
+<text x="20" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="19" font-weight="800" fill="#f5f5f5">Gymmie</text>
+<text x="418" y="62" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#2fae63">★ 1</text>
+<text x="20" y="88" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" fill="#9a9a9a">No description yet.</text>
+<text x="20" y="136" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="2" fill="#5f5f5f">STACK</text>
+<text x="418" y="136" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#5f5f5f">pushed 6 days ago</text>
+<rect x="20" y="148" width="398" height="6" fill="#1a1a1a" fill-opacity="0.5"/><rect x="20.0" y="148" width="322.4" height="6" fill="#2fae63"/><rect x="342.4" y="148" width="50.5" height="6" fill="#d0d0d0"/><rect x="393.0" y="148" width="13.3" height="6" fill="#a3a3a3"/><rect x="406.3" y="148" width="6.3" height="6" fill="#4a4a4a"/><rect x="20" y="168" width="8" height="8" fill="#2fae63"/><text x="34" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9a9a9a">JavaScript 81%</text><rect x="135.39999999999998" y="168" width="8" height="8" fill="#d0d0d0"/><text x="149.39999999999998" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9a9a9a">Dart 13%</text><rect x="214.2" y="168" width="8" height="8" fill="#a3a3a3"/><text x="228.2" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9a9a9a">HTML 3%</text><rect x="286.9" y="168" width="8" height="8" fill="#4a4a4a"/><text x="300.9" y="176" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#9a9a9a">CSS 2%</text>
 </svg>

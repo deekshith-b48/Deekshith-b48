@@ -15,14 +15,14 @@ const A = (f) => path.join(ROOT, "assets", f);
 const G = (f) => path.join(ROOT, "assets", "generated", f);
 fs.mkdirSync(path.join(ROOT, "assets", "generated"), { recursive: true });
 
-/* ───────────── palette: black, white, dark green only (roles: green = text, white = accents) ───────────── */
-const BG = "#050806", PANEL = "#08100b", MUT = "#8c968f", DIM = "#5a615c";
-const FG = "#2fae63";                 // text and primary marks: green
-const G3 = "#f4f7f4";                 // accent highlight: white
-const G2 = "#c9d1cb";                 // accent: light white
-const G1 = "#4a514c";                 // borders / rules: white at low strength
-const G0 = "#1c211e";                 // faint fills
-const SHADES = [G3, G2, "#a3aaa5", G1, G0]; // language bars: whites stepping down
+/* ───────────── palette: neutral black / white with dark green as a small accent ───────────── */
+const BG = "#050505", PANEL = "#0a0a0a", MUT = "#9a9a9a", DIM = "#5f5f5f";
+const FG = "#f5f5f5";                 // text: white
+const G3 = "#2fae63";                 // accent: green (dots, prompts, stars, peak bars, sweeps)
+const G2 = "#d0d0d0";                 // borders and marks: light grey-white
+const G1 = "#4a4a4a";                 // rules: mid grey
+const G0 = "#1a1a1a";                 // faint fills: dark grey
+const SHADES = [G3, G2, "#a3a3a3", G1, G0]; // language bars: green leader, then whites stepping down
 const MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
 const SANS = "ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -38,7 +38,7 @@ const rnd = () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967
 
 /** Terminal window card: black panel, green edge, title bar with three dots. */
 const win = (x, y, w, h, title, edge = G2) => `<g transform="translate(${x} ${y})">
-<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="8" fill="${PANEL}" stroke="${edge}" stroke-opacity="0.7"/>
+<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="8" fill="${PANEL}" stroke="${edge}" stroke-opacity="0.45"/>
 <rect x="1" y="1" width="${w - 2}" height="28" rx="7" fill="${G0}" fill-opacity="0.35"/>
 <line x1="1" y1="29" x2="${w - 1}" y2="29" stroke="${edge}" stroke-opacity="0.35"/>
 <circle cx="18" cy="15" r="4.5" fill="${G3}"/><circle cx="34" cy="15" r="4.5" fill="${G2}"/><circle cx="50" cy="15" r="4.5" fill="${FG}" fill-opacity="0.8"/>
@@ -80,7 +80,7 @@ function buildHero() {
     for (let k = 0; k < n; k++) {
       const head = k === n - 1;
       const op = head ? 0.9 : 0.08 + (k / n) * 0.32;
-      ts += `<tspan x="${x.toFixed(1)}" dy="14" fill="${head ? FG : i % 3 ? G2 : G3}" fill-opacity="${op.toFixed(2)}">${esc(glyphs[Math.floor(rnd() * glyphs.length)])}</tspan>`;
+      ts += `<tspan x="${x.toFixed(1)}" dy="14" fill="${head ? FG : i % 4 ? G2 : G3}" fill-opacity="${op.toFixed(2)}">${esc(glyphs[Math.floor(rnd() * glyphs.length)])}</tspan>`;
     }
     rain += `<text font-family="${MONO}" font-size="12" y="0"><animateTransform attributeName="transform" type="translate" from="0 ${-n * 14 - 10}" to="0 ${H + 20}" dur="${dur}s" begin="${begin}s" repeatCount="indefinite"/>${ts}</text>\n`;
   }
@@ -132,7 +132,7 @@ ${term}
 <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.5" fill="#000" opacity="0.5"/></pattern>
 <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
 <filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0"/>
-<feComponentTransfer><feFuncR type="table" tableValues="0.02 0.88 0.18"/><feFuncG type="table" tableValues="0.03 0.90 0.68"/><feFuncB type="table" tableValues="0.02 0.88 0.38"/></feComponentTransfer></filter>`, body));
+<feComponentTransfer><feFuncR type="table" tableValues="0.02 0.62 0.96"/><feFuncG type="table" tableValues="0.02 0.64 0.97"/><feFuncB type="table" tableValues="0.02 0.62 0.96"/></feComponentTransfer></filter>`, body));
 }
 
 function buildStack() {
@@ -153,7 +153,7 @@ function buildStack() {
     const chips = items.map((t, k) => {
       const w = Math.round(t.length * 6.8 + 20);
       if (cx + w > cw - 12) { cx = 16; cy += 30; }
-      const g = `<g transform="translate(${cx} ${cy})"><rect width="${w}" height="22" rx="3" fill="${G0}" fill-opacity="0.45" stroke="${[G3, G2, G2, G3][k % 4]}" stroke-opacity="0.65"/><text x="${w / 2}" y="15" text-anchor="middle" font-family="${MONO}" font-size="11.5" fill="${FG}">${esc(t)}</text></g>`;
+      const g = `<g transform="translate(${cx} ${cy})"><rect width="${w}" height="22" rx="3" fill="${G0}" fill-opacity="0.45" stroke="${G2}" stroke-opacity="0.35"/><text x="${w / 2}" y="15" text-anchor="middle" font-family="${MONO}" font-size="11.5" fill="${FG}">${esc(t)}</text></g>`;
       cx += w + 8;
       return g;
     }).join("");
@@ -213,8 +213,8 @@ function buildBadges() {
   const items = [["PORTFOLIO", "its-deekshith.space"], ["GITHUB", "deekshith-b48"], ["LINKEDIN", "deekshithb48"], ["X", "@deekshith_b48"], ["LEETCODE", "deekshith_b48"], ["EMAIL", "bdeekshith41@gmail.com"]];
   for (const [k, v] of items) {
     const lw = k.length * 8.2 + 26, vw = v.length * 7.2 + 24, w = Math.round(lw + vw);
-    write(A(`badge-${k.toLowerCase()}.svg`), svgDoc(w, 34, `${k}: ${v}`, "", `<rect x="0.5" y="0.5" width="${w - 1}" height="33" rx="4" fill="${PANEL}" stroke="${G3}" stroke-opacity="0.7"/>
-<rect x="1" y="1" width="${lw.toFixed(0)}" height="32" rx="3" fill="${G3}" fill-opacity="0.1"/>
+    write(A(`badge-${k.toLowerCase()}.svg`), svgDoc(w, 34, `${k}: ${v}`, "", `<rect x="0.5" y="0.5" width="${w - 1}" height="33" rx="4" fill="${PANEL}" stroke="${G2}" stroke-opacity="0.45"/>
+<rect x="1" y="1" width="${lw.toFixed(0)}" height="32" rx="3" fill="#fff" fill-opacity="0.06"/>
 <text x="13" y="21.5" font-family="${MONO}" font-size="10.5" font-weight="700" letter-spacing="2" fill="${G3}">${esc(k)}</text>
 <text x="${(lw + 12).toFixed(0)}" y="21.5" font-family="${MONO}" font-size="12" fill="${FG}">${esc(v)}</text>`));
   }
@@ -372,7 +372,7 @@ function pulseSvg({ days, source }) {
   const bars = days.map((d, i) => {
     const h = d.n ? Math.max(5, (d.n / max) * maxH) : 2;
     const x = 20 + i * step;
-    return `<rect x="${x.toFixed(1)}" y="${base - h}" width="${(step - 4).toFixed(1)}" height="${h.toFixed(1)}" fill="${d.n ? (d.n === max ? FG : G3) : G1}" fill-opacity="${d.n ? 1 : 0.5}">
+    return `<rect x="${x.toFixed(1)}" y="${base - h}" width="${(step - 4).toFixed(1)}" height="${h.toFixed(1)}" fill="${d.n ? (d.n === max ? G3 : FG) : G1}" fill-opacity="${d.n ? 1 : 0.5}">
 <animate attributeName="height" from="0" to="${h.toFixed(1)}" begin="${(0.1 + i * 0.03).toFixed(2)}s" dur="0.6s" fill="freeze"/><animate attributeName="y" from="${base}" to="${base - h}" begin="${(0.1 + i * 0.03).toFixed(2)}s" dur="0.6s" fill="freeze"/></rect>`;
   }).join("");
   write(G("pulse.svg"), svgDoc(W, H, "Push activity, last 30 days", "", `<rect width="${W}" height="${H}" fill="${BG}"/>${win(0, 0, W, H, `~/activity — ${source} per day, 30d`, G2)}

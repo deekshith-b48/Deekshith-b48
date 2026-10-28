@@ -33,15 +33,15 @@
 <table width="100%">
   <tr>
     <td width="50%"><a href="https://github.com/deekshith-b48/Qivra"><img src="assets/generated/featured-1.svg" alt="Qivra" width="100%"/></a></td>
-    <td width="50%"><a href="https://github.com/deekshith-b48/SOLVA"><img src="assets/generated/featured-2.svg" alt="SOLVA" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/PlanBee"><img src="assets/generated/featured-2.svg" alt="PlanBee" width="100%"/></a></td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/deekshith-b48/ZeroHack"><img src="assets/generated/featured-3.svg" alt="ZeroHack" width="100%"/></a></td>
-    <td width="50%"><a href="https://github.com/deekshith-b48/Kubecost-challenge"><img src="assets/generated/featured-4.svg" alt="Kubecost-challenge" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/prysm.io"><img src="assets/generated/featured-3.svg" alt="prysm.io" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/we3chat"><img src="assets/generated/featured-4.svg" alt="we3chat" width="100%"/></a></td>
   </tr>
 </table>
 
-<p align="center"><sub>Newest projects · refreshed automatically every day</sub></p>
+<p align="center"><sub>Selected projects · refreshed automatically every day</sub></p>
 <!--FEATURED:END-->
 
 <img src="assets/h-repos.svg" alt="04 — Latest repositories" width="100%"/>

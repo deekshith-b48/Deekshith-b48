@@ -32,16 +32,16 @@
 <!--FEATURED:START-->
 <table width="100%">
   <tr>
-    <td width="50%"><a href="https://github.com/deekshith-b48/Daily-LeetCode"><img src="assets/generated/featured-1.svg" alt="Daily-LeetCode" width="100%"/></a></td>
-    <td width="50%"><a href="https://github.com/deekshith-b48/Qivra"><img src="assets/generated/featured-2.svg" alt="Qivra" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/ZeroHack"><img src="assets/generated/featured-1.svg" alt="ZeroHack" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/Daily-LeetCode"><img src="assets/generated/featured-2.svg" alt="Daily-LeetCode" width="100%"/></a></td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/deekshith-b48/Gymmie"><img src="assets/generated/featured-3.svg" alt="Gymmie" width="100%"/></a></td>
-    <td width="50%"><a href="https://github.com/deekshith-b48/NoLava"><img src="assets/generated/featured-4.svg" alt="NoLava" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/poligap-kroolo"><img src="assets/generated/featured-3.svg" alt="poligap-kroolo" width="100%"/></a></td>
+    <td width="50%"><a href="https://github.com/deekshith-b48/Master-Software-Engineering"><img src="assets/generated/featured-4.svg" alt="Master-Software-Engineering" width="100%"/></a></td>
   </tr>
 </table>
 
-<p align="center"><sub>Most recently updated repositories · refreshed automatically every day</sub></p>
+<p align="center"><sub>Pinned repositories · refreshed automatically every day</sub></p>
 <!--FEATURED:END-->
 
 <img src="assets/h-repos.svg" alt="04 — Latest repositories" width="100%"/>

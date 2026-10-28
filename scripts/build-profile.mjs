@@ -1,7 +1,7 @@
 // Builds the profile README art: black / white / dark-green vector animations.
 //  - static art: hero, stack showcase, engineering notes, section headers, divider
-//  - live data (GitHub API): featured projects (pinned, else latest), latest repos, languages, push pulse, stats
-// Usage: node scripts/build-profile.mjs [--mock]      (GITHUB_TOKEN optional; enables pinned repos)
+//  - live data (GitHub API, with an HTML fallback): featured = newest real projects, latest repos, languages, push pulse, stats
+// Usage: node scripts/build-profile.mjs [--mock]      (GITHUB_TOKEN optional; raises API limits)
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -198,7 +198,7 @@ ${right ? `<text x="${W - 20}" y="25" text-anchor="end" font-family="${MONO}" fo
 <rect x="-160" y="37" width="160" height="2" fill="url(#sw)"><animate attributeName="x" from="-160" to="${W}" dur="4.5s" repeatCount="indefinite"/></rect>`));
   hdr("h-analytics", "01", "Analytics", "live from GitHub");
   hdr("h-stack", "02", "Stack", "what I build with");
-  hdr("h-projects", "03", "Projects", "pinned · auto-updated daily");
+  hdr("h-projects", "03", "Projects", "newest projects · auto-updated daily");
   hdr("h-repos", "04", "Latest repositories", "git log --since=recent");
   hdr("h-notes", "05", "Engineering notes", "how I build");
   hdr("h-connect", "06", "Elsewhere", "");
@@ -237,39 +237,61 @@ const MOCK_DATA = {
     { name: "Gymmie", url: "https://github.com/deekshith-b48/Gymmie", description: "Gym companion app.", stars: 1, pushed: "2026-10-22T10:00:00Z", topics: [], languages: { JavaScript: 20000 } },
     { name: "NoLava", url: "https://github.com/deekshith-b48/NoLava", description: "", stars: 0, pushed: "2026-10-18T10:00:00Z", topics: [], languages: {} },
   ],
-  pinned: true,
 };
+
+/* ───────────── featured-project engine ───────────── */
+// Featured = the newest *real* projects. Practice/log repos, forks, empty-description and tiny repos never qualify.
+const EXCLUDE = ["Daily-LeetCode", "Master-Software-Engineering"];             // always skipped (edit freely)
+const PRACTICE_NAME_RE = /leetcode|dsa|algorithm|practice|interview|master-software|cheat|tutorial|playground|learning-log/i;
+const PRACTICE_DESC_RE = /leetcode|journey of solving|problems daily/i;
+const MIN_CODE_BYTES = 5000;
+const repoBytes = (r) => { const t = Object.values(r.languages || {}).reduce((n, b) => n + b, 0); return t >= 100 ? t : null; }; // null = unknown
+export function pickFeatured(repos, n = 4) {
+  return repos
+    .filter((r) => !r.fork && !r.archived && r.name.toLowerCase() !== PROFILE_REPO.toLowerCase()
+      && !EXCLUDE.includes(r.name)
+      && (r.description || "").trim()
+      && !PRACTICE_NAME_RE.test([r.name, ...(r.topics || [])].join(" "))
+      && !PRACTICE_DESC_RE.test(r.description)
+      && (repoBytes(r) === null || repoBytes(r) >= MIN_CODE_BYTES))
+    .sort((a, b) => b.pushed.localeCompare(a.pushed) || (b.created || "").localeCompare(a.created || ""))
+    .slice(0, n);
+}
 
 async function fetchData() {
   if (MOCK) return MOCK_DATA;
   const user = await gh(`https://api.github.com/users/${USER}`);
-  const raw = await gh(`https://api.github.com/users/${USER}/repos?sort=pushed&per_page=40`);
+  const raw = await gh(`https://api.github.com/users/${USER}/repos?sort=pushed&per_page=60`);
   const own = raw.filter((r) => !r.fork && !r.archived && r.name.toLowerCase() !== PROFILE_REPO.toLowerCase());
   const slim = async (r) => {
     let languages = {};
-    try { languages = await gh(r.languages_url); } catch { /* keep empty */ }
-    return { name: r.name, url: r.html_url, description: r.description || "", stars: r.stargazers_count, pushed: r.pushed_at, topics: r.topics || [], languages };
+    try { languages = await gh(r.languages_url); } catch { /* unknown -> tiny-repo rule skipped */ }
+    return { name: r.name, url: r.html_url, description: r.description || "", stars: r.stargazers_count, pushed: r.pushed_at, created: r.created_at, topics: r.topics || [], languages, fork: r.fork, archived: r.archived };
   };
-  let pinned = [];
-  if (TOKEN) {
-    try {
-      const q = `query{user(login:"${USER}"){pinnedItems(first:6,types:REPOSITORY){nodes{...on Repository{name}}}}}`;
-      const res = await gh("https://api.github.com/graphql", { method: "POST", body: JSON.stringify({ query: q }), headers: { "Content-Type": "application/json" } });
-      pinned = (res.data?.user?.pinnedItems?.nodes || []).map((n) => n.name);
-    } catch (e) { console.warn("pinned lookup failed:", e.message); }
+  const repos = await Promise.all(own.slice(0, 30).map(slim));
+  return { user, repos, ownCount: own.length, totalStars: own.reduce((n, r) => n + r.stargazers_count, 0), source: "api" };
+}
+
+/** No-API fallback (rate limit / outage): scrape the public repositories tab. Language bar becomes one segment. */
+async function fetchFromHtml() {
+  const repos = [];
+  for (let page = 1; page <= 2; page++) {
+    const r = await fetch(`https://github.com/${USER}?tab=repositories&type=source&sort=updated&page=${page}`, { headers: { "User-Agent": "Mozilla/5.0 (profile-readme-builder)" } });
+    if (!r.ok) throw new Error(`repositories tab -> ${r.status}`);
+    const html = await r.text();
+    for (const m of html.matchAll(/<li[^>]*itemprop="owns"[^>]*>([\s\S]*?)<\/li>/g)) {
+      const it = m[1];
+      const name = (it.match(/itemprop="name codeRepository"[^>]*>\s*([^<\s]+)/) || [])[1];
+      if (!name || /Archived/.test(it) || name.toLowerCase() === PROFILE_REPO.toLowerCase()) continue;
+      const description = ((it.match(/itemprop="description"[^>]*>\s*([^<]+)/) || [])[1] || "").replace(/\s+/g, " ").trim();
+      const lang = (it.match(/itemprop="programmingLanguage">([^<]+)/) || [])[1];
+      const updated = (it.match(/datetime="([^"]+)"/) || [])[1] || new Date().toISOString();
+      const stars = +(((it.match(new RegExp(`href="/${USER}/${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/stargazers"[^>]*>[\\s\\S]*?([\\d,]+)\\s*</a>`)) || [])[1] || "0").replace(/,/g, ""));
+      repos.push({ name, url: `https://github.com/${USER}/${name}`, description, stars, pushed: updated, created: updated, topics: [], languages: lang ? { [lang.trim()]: 1 } : {}, fork: false, archived: false });
+    }
   }
-  const byName = new Map(own.map((r) => [r.name, r]));
-  const pinnedRepos = pinned.map((n) => byName.get(n)).filter(Boolean);
-  const featuredRaw = (pinnedRepos.length ? pinnedRepos : own).slice(0, 4);
-  const latestRaw = own.slice(0, 6);
-  const need = new Map();
-  for (const r of [...featuredRaw, ...latestRaw, ...own.slice(0, 20)]) if (!need.has(r.name)) need.set(r.name, r);
-  const repos = await Promise.all([...need.values()].map(slim));
-  return {
-    user, repos, pinned: pinnedRepos.length > 0,
-    featuredNames: featuredRaw.map((r) => r.name), latestNames: latestRaw.map((r) => r.name),
-    totalStars: own.reduce((n, r) => n + r.stargazers_count, 0), ownCount: own.length, bySlim: new Map(repos.map((r) => [r.name, r])),
-  };
+  if (repos.length < 3) throw new Error("repository list not found in HTML");
+  return { user: null, repos, source: "html" };
 }
 
 /** Pushes per day for the last 30 days from the public events feed (commit arrays are no longer included). */
@@ -450,23 +472,27 @@ async function main() {
   buildHero(); buildStack(); buildNotes(); buildChrome(); buildBadges();
   await buildContrib();
   let data;
-  try { data = await fetchData(); } catch (e) { console.warn("GitHub API unavailable, keeping existing generated files:", e.message); return; }
-  const byName = data.bySlim || new Map(data.repos.map((r) => [r.name, r]));
-  const featured = (data.featuredNames ? data.featuredNames.map((n) => byName.get(n)) : data.repos.slice(0, 4)).filter(Boolean);
-  const latest = (data.latestNames ? data.latestNames.map((n) => byName.get(n)) : data.repos.slice(0, 6)).filter(Boolean);
+  try { data = await fetchData(); } catch (e) {
+    console.warn("GitHub API unavailable, using the HTML fallback:", e.message);
+    try { data = await fetchFromHtml(); } catch (e2) { console.warn("fallback failed, keeping existing generated files:", e2.message); return; }
+  }
+  const featured = pickFeatured(data.repos);
+  const latest = [...data.repos].sort((a, b) => b.pushed.localeCompare(a.pushed)).slice(0, 6);
+  console.log("source:", data.source || "mock", "| featured:", featured.map((r) => r.name).join(", ") || "(none)");
   featured.forEach(featuredCard);
   for (let i = featured.length; i < 4; i++) { const p = G(`featured-${i + 1}.svg`); if (fs.existsSync(p)) fs.rmSync(p); }
-  latestSvg(latest); languagesSvg(data.repos); statsSvg(data);
-  pulseSvg(await fetchPulse(data.repos));
+  latestSvg(latest);
+  if (data.source !== "html") { languagesSvg(data.repos); statsSvg(data); pulseSvg(await fetchPulse(data.repos)); }
 
   const readmePath = path.join(ROOT, "README.md");
   let md = fs.readFileSync(readmePath, "utf8");
   const cell = (r, i) => `    <td width="50%"><a href="${r.url}"><img src="assets/generated/featured-${i + 1}.svg" alt="${esc(r.name)}" width="100%"/></a></td>`;
   const rowsHtml = [];
   for (let i = 0; i < featured.length; i += 2) rowsHtml.push(`  <tr>\n${[featured[i], featured[i + 1]].map((r, k) => (r ? cell(r, i + k) : `    <td width="50%"></td>`)).join("\n")}\n  </tr>`);
-  md = replaceBlock(md, "FEATURED", `<table width="100%">\n${rowsHtml.join("\n")}\n</table>\n\n<p align="center"><sub>${data.pinned ? "Pinned repositories" : "Most recently updated repositories"} · refreshed automatically every day</sub></p>`);
+  md = replaceBlock(md, "FEATURED", `<table width="100%">\n${rowsHtml.join("\n")}\n</table>\n\n<p align="center"><sub>Newest projects · refreshed automatically every day</sub></p>`);
   md = replaceBlock(md, "LATEST", `<p align="center"><sub>${latest.map((r) => `<a href="${r.url}">${esc(r.name)}</a>`).join(" · ")}</sub></p>`);
   fs.writeFileSync(readmePath, md);
   console.log("README markers updated");
 }
-main();
+import { pathToFileURL } from "node:url";
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main();

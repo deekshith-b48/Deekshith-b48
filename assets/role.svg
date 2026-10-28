@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-label="role">
+<defs></defs>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.7s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="0s" dur="0.7s" fill="freeze"/><rect x="0.5" y="0.5" width="899" height="189" rx="6" fill="#121212" stroke="#ffffff" stroke-opacity="0.12"/>
+<line x1="6" y1="1" x2="894" y2="1" stroke="#ffffff" stroke-opacity="0.14"/>
+<text x="32" y="38" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="3" fill="#f5f5f5">LATEST ROLE</text>
+<text x="32" y="76" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#f5f5f5">Software Developer Intern</text>
+<text x="32" y="102" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#f5f5f5">@ Anvelos</text>
+<text x="32" y="124" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#6b6b6b">Jan 2026 – Oct 2026 · Bengaluru</text>
+<text x="32" y="152" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13.5" fill="#9e9e9e">Building full-stack features with React, Node.js &amp; REST APIs. Working in an Agile team</text>
+<text x="32" y="171" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13.5" fill="#9e9e9e">with CI/CD pipelines and real deployment workflows.</text></g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-label="highlights">
+<defs></defs>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.7s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="0.2s" dur="0.7s" fill="freeze"/><rect x="0.5" y="10.5" width="287" height="99" rx="6" fill="#121212" stroke="#ffffff" stroke-opacity="0.12"/>
+<line x1="6" y1="11" x2="282" y2="11" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="18" y="38" width="38" height="38" rx="8" fill="#fff" fill-opacity="0.06" stroke="#fff" stroke-opacity="0.12"/>
+<path d="M30 50h14v6a7 7 0 0 1-14 0zM37 63v6M31 70h12" fill="none" stroke="#f5f5f5" stroke-width="1.6" stroke-linecap="round"/>
+<text x="70" y="54" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#f5f5f5">SIH Runner-Up</text>
+<text x="70" y="74" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#9e9e9e">Top 0.004% of 55K+ teams</text></g><g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.45s" dur="0.7s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="0.45s" dur="0.7s" fill="freeze"/><rect x="306.5" y="10.5" width="287" height="99" rx="6" fill="#121212" stroke="#ffffff" stroke-opacity="0.12"/>
+<line x1="312" y1="11" x2="588" y2="11" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="324" y="38" width="38" height="38" rx="8" fill="#fff" fill-opacity="0.06" stroke="#fff" stroke-opacity="0.12"/>
+<path d="M336 50h14v6a7 7 0 0 1-14 0zM343 63v6M337 70h12" fill="none" stroke="#f5f5f5" stroke-width="1.6" stroke-linecap="round"/>
+<text x="376" y="54" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#f5f5f5">GSSoC 2024</text>
+<text x="376" y="74" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#9e9e9e">15+ PRs · Campus Ambassador</text></g><g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.7s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="0.7s" dur="0.7s" fill="freeze"/><rect x="612.5" y="10.5" width="287" height="99" rx="6" fill="#121212" stroke="#ffffff" stroke-opacity="0.12"/>
+<line x1="618" y1="11" x2="894" y2="11" stroke="#ffffff" stroke-opacity="0.14"/>
+<rect x="630" y="38" width="38" height="38" rx="8" fill="#fff" fill-opacity="0.06" stroke="#fff" stroke-opacity="0.12"/>
+<path d="M642 50h14v6a7 7 0 0 1-14 0zM649 63v6M643 70h12" fill="none" stroke="#f5f5f5" stroke-width="1.6" stroke-linecap="round"/>
+<text x="682" y="54" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#f5f5f5">Future of Work</text>
+<text x="682" y="74" font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#9e9e9e">Hackathon Winner</text></g>
+</svg>

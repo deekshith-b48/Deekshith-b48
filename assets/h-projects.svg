@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="44" viewBox="0 0 900 44" role="img" aria-label="h-projects">
+<defs></defs>
+<rect width="900" height="44" rx="6" fill="#0a0a0a" stroke="#fff" stroke-opacity="0.12"/>
+<text x="20" y="28" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="3" fill="#6b6b6b">04 —</text>
+<text x="64" y="28" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="3" fill="#f5f5f5">FEATURED PROJECTS</text>
+<text x="880" y="28" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#6b6b6b">all projects →</text>
+
+</svg>

@@ -48,7 +48,7 @@
 <img src="assets/generated/latest.svg" alt="Latest repositories (live)" width="100%"/>
 
 <!--LATEST:START-->
-<p align="center"><sub><a href="https://github.com/deekshith-b48/gatekeeper-agent">gatekeeper-agent</a> · <a href="https://github.com/deekshith-b48/Gatekeeper">Gatekeeper</a> · <a href="https://github.com/deekshith-b48/Daily-LeetCode">Daily-LeetCode</a> · <a href="https://github.com/deekshith-b48/Crackmate">Crackmate</a> · <a href="https://github.com/deekshith-b48/Qivra">Qivra</a> · <a href="https://github.com/deekshith-b48/NoLava">NoLava</a></sub></p>
+<p align="center"><sub><a href="https://github.com/deekshith-b48/Daily-LeetCode">Daily-LeetCode</a> · <a href="https://github.com/deekshith-b48/gatekeeper-agent">gatekeeper-agent</a> · <a href="https://github.com/deekshith-b48/Crackmate">Crackmate</a> · <a href="https://github.com/deekshith-b48/Gatekeeper">Gatekeeper</a> · <a href="https://github.com/deekshith-b48/Qivra">Qivra</a> · <a href="https://github.com/deekshith-b48/NoLava">NoLava</a></sub></p>
 <!--LATEST:END-->
 
 <img src="assets/h-notes.svg" alt="05 — Engineering notes" width="100%"/>
